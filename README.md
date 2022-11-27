@@ -12,22 +12,22 @@ Application Development final project. It's a restaurant reservation management 
         - Add Reservation (connect two database)
         - Remove Reservation
         - Modify Reservation
-        - Search Reservation | OPTIONAL
+        - Search Reservation
     - Customer Page (database)
         - Add Customers
         - Remove Customers
         - Modify Customer
-        - Search Customer | OPTIONAL
+        - Search Customer
     - Table Page (database)
         - Add Table
         - Remove Table
         - Modify Table
-        - Search RTable | OPTIONAL
+        - Search RTable
     - User Page (database)
         - Add Users (for login page)
         - Remove Users (for login page)
         - Modify Users
-        - Search User | OPTIONAL
+        - Search User
     - Settings
         - Light Mode / Night Mode
         - Logout
