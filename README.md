@@ -1,9 +1,7 @@
 
-# Munch
+![alt text](https://github.com/JamesVictorAlvarez/Munch/blob/main/Munch/Images/logo.png?raw=true)
 
 Application Development final project. It's a restaurant reservation management system.
-
-![alt text](https://github.com/JamesVictorAlvarez/Munch/blob/main/Munch/Images/logo.png?raw=true)
 
 ## Features
 
