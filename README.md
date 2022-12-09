@@ -38,5 +38,5 @@ Application Development final project. It's a restaurant reservation management 
 ## Authors
 
 - [@James](https://github.com/JamesVictorAlvarez)
-- Rachel
+- Rachelle
 - Jericho
