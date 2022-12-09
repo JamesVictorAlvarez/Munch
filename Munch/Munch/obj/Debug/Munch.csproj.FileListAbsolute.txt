@@ -12,3 +12,7 @@ D:\School\App Dev\Project\Munch\Munch\bin\Debug\Munch.exe.config
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.pdb
 D:\School\App Dev\Project\Munch\Munch\bin\Debug\Munch.pdb
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.Home.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.Table.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.AddTable.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ModifyTable.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.RemoveTable.resources
