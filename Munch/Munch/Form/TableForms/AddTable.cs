@@ -34,10 +34,17 @@ namespace Munch
         {
             try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Table (Section, Capacity) VALUES ('" + sectionTextBox.Text + "','" + capacityTextBox.Text + "')", conn);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Table Added");
+                if (sectionTextBox.Text != "" && capacityTextBox.Text != "")
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Table (Section, Capacity) VALUES ('" + sectionTextBox.Text + "','" + capacityTextBox.Text + "')", conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Table Added");
+                }
+                else
+                {
+                    MessageBox.Show("Please fill all fields.");
+                }
             }
             catch(Exception ex)
             {

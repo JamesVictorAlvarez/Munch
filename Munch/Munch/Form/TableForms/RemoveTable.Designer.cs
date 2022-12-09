@@ -73,6 +73,7 @@
             this.removeTableButton.TabIndex = 4;
             this.removeTableButton.Text = "Remove";
             this.removeTableButton.UseVisualStyleBackColor = false;
+            this.removeTableButton.Click += new System.EventHandler(this.removeTableButton_Click);
             // 
             // pictureMin
             // 
