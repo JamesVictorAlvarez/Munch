@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -75,6 +77,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableForms\AddTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableForms\AddTableForm.Designer.cs">
+      <DependentUpon>AddTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableForms\HomeTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableForms\HomeTableForm.Designer.cs">
+      <DependentUpon>HomeTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableForms\ModifyTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableForms\ModifyTableForm.Designer.cs">
+      <DependentUpon>ModifyTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableForms\RemoveTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableForms\RemoveTableForm.Designer.cs">
+      <DependentUpon>RemoveTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserDbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -96,6 +122,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TableForms\AddTableForm.resx">
+      <DependentUpon>AddTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableForms\HomeTableForm.resx">
+      <DependentUpon>HomeTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableForms\ModifyTableForm.resx">
+      <DependentUpon>ModifyTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableForms\RemoveTableForm.resx">
+      <DependentUpon>RemoveTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +186,13 @@
     <Content Include="Form\UserDb_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>UserDb.mdf</DependentUpon>
+    </Content>
+    <Content Include="TableForms\TableDb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TableForms\TableDb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TableDb.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

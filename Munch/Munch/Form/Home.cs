@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Munch.Table;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,5 +44,11 @@ namespace Munch
             toolTip1.SetToolTip(pictureMin, "Minimize");
         }
 
+        private void tableButton_Click(object sender, EventArgs e)
+        {
+            HomeTableForm homeTableForm = new HomeTableForm();
+            homeTableForm.Show();
+            this.Close();
+        }
     }
 }

@@ -1,5 +1,6 @@
-﻿CREATE TABLE [dbo].[Login]
+﻿CREATE TABLE [dbo].[Table]
 (
-	[username] TEXT NOT NULL PRIMARY KEY, 
-    [password] TEXT NOT NULL
+	[TableId] INT NOT NULL PRIMARY KEY, 
+    [Section] CHAR(1) NOT NULL, 
+    [Capacity] NCHAR(10) NOT NULL
 )
