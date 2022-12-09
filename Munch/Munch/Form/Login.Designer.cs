@@ -32,24 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.showPicture = new System.Windows.Forms.PictureBox();
+            this.passwordText = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.usernameText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.passwordText = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.hidePicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.showPicture = new System.Windows.Forms.PictureBox();
-            this.hidePicture = new System.Windows.Forms.PictureBox();
             this.pictureMin = new System.Windows.Forms.PictureBox();
             this.pictureClose = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,56 +66,32 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.hidePicture);
             this.groupBox2.Location = new System.Drawing.Point(221, 205);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(356, 333);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " Login";
             // 
-            // loginButton
+            // showPicture
             // 
-            this.loginButton.BackColor = System.Drawing.Color.IndianRed;
-            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginButton.FlatAppearance.BorderSize = 0;
-            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loginButton.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(38, 218);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(282, 32);
-            this.loginButton.TabIndex = 2;
-            this.loginButton.Text = "Log in";
-            this.loginButton.UseVisualStyleBackColor = false;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
-            // 
-            // usernameText
-            // 
-            this.usernameText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameText.Location = new System.Drawing.Point(38, 98);
-            this.usernameText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.usernameText.Name = "usernameText";
-            this.usernameText.Size = new System.Drawing.Size(282, 23);
-            this.usernameText.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username: ";
+            this.showPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showPicture.Image = global::Munch.Properties.Resources.unhidden;
+            this.showPicture.Location = new System.Drawing.Point(296, 161);
+            this.showPicture.Name = "showPicture";
+            this.showPicture.Size = new System.Drawing.Size(24, 23);
+            this.showPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.showPicture.TabIndex = 4;
+            this.showPicture.TabStop = false;
+            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
+            this.showPicture.MouseHover += new System.EventHandler(this.showPicture_MouseHover);
             // 
             // passwordText
             // 
             this.passwordText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordText.Location = new System.Drawing.Point(38, 161);
-            this.passwordText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordText.Margin = new System.Windows.Forms.Padding(2);
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(253, 23);
             this.passwordText.TabIndex = 4;
@@ -131,6 +107,56 @@
             this.label2.Size = new System.Drawing.Size(86, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password: ";
+            // 
+            // loginButton
+            // 
+            this.loginButton.BackColor = System.Drawing.Color.IndianRed;
+            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginButton.FlatAppearance.BorderSize = 0;
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginButton.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.Color.White;
+            this.loginButton.Location = new System.Drawing.Point(38, 218);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(2);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(282, 32);
+            this.loginButton.TabIndex = 2;
+            this.loginButton.Text = "Log in";
+            this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // usernameText
+            // 
+            this.usernameText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameText.Location = new System.Drawing.Point(38, 98);
+            this.usernameText.Margin = new System.Windows.Forms.Padding(2);
+            this.usernameText.Name = "usernameText";
+            this.usernameText.Size = new System.Drawing.Size(282, 23);
+            this.usernameText.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username: ";
+            // 
+            // hidePicture
+            // 
+            this.hidePicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hidePicture.Image = global::Munch.Properties.Resources.hidden;
+            this.hidePicture.Location = new System.Drawing.Point(296, 161);
+            this.hidePicture.Name = "hidePicture";
+            this.hidePicture.Size = new System.Drawing.Size(24, 23);
+            this.hidePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hidePicture.TabIndex = 5;
+            this.hidePicture.TabStop = false;
+            this.hidePicture.Click += new System.EventHandler(this.hidePicture_Click);
+            this.hidePicture.MouseHover += new System.EventHandler(this.hidePicture_MouseHover);
             // 
             // panel1
             // 
@@ -158,32 +184,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // showPicture
-            // 
-            this.showPicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showPicture.Image = global::Munch.Properties.Resources.unhidden;
-            this.showPicture.Location = new System.Drawing.Point(296, 161);
-            this.showPicture.Name = "showPicture";
-            this.showPicture.Size = new System.Drawing.Size(24, 23);
-            this.showPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.showPicture.TabIndex = 4;
-            this.showPicture.TabStop = false;
-            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
-            this.showPicture.MouseHover += new System.EventHandler(this.showPicture_MouseHover);
-            // 
-            // hidePicture
-            // 
-            this.hidePicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hidePicture.Image = global::Munch.Properties.Resources.hidden;
-            this.hidePicture.Location = new System.Drawing.Point(296, 161);
-            this.hidePicture.Name = "hidePicture";
-            this.hidePicture.Size = new System.Drawing.Size(24, 23);
-            this.hidePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hidePicture.TabIndex = 5;
-            this.hidePicture.TabStop = false;
-            this.hidePicture.Click += new System.EventHandler(this.hidePicture_Click);
-            this.hidePicture.MouseHover += new System.EventHandler(this.hidePicture_MouseHover);
             // 
             // pictureMin
             // 
@@ -241,10 +241,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

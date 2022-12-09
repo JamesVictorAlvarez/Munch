@@ -13,7 +13,7 @@ namespace Munch
 {
     public partial class Login : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-2804JRH;Initial Catalog=Restaurant_Reservation;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
         public Login()
         {
             InitializeComponent();

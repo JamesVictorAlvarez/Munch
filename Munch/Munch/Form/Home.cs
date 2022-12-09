@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Munch
 {
@@ -16,5 +17,31 @@ namespace Munch
         {
             InitializeComponent();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureClose_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureClose, "Close");
+        }
+
+        private void pictureMin_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureMin, "Minimize");
+        }
+
     }
 }
