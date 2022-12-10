@@ -48,9 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\UserForms\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\UserForms\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\TableForms\AddTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,10 +105,16 @@
     <Compile Include="Form\TableForms\RemoveTable.Designer.cs">
       <DependentUpon>RemoveTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserDbDataSet.Designer.cs">
+    <Compile Include="Form\UserForms\RemoveUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\UserForms\RemoveUser.Designer.cs">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDbDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UserDbDataSet.xsd</DependentUpon>
+      <DependentUpon>UserDbDataSet1.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -123,6 +133,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\RemoveTable.resx">
       <DependentUpon>RemoveTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\RemoveUser.resx">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,16 +159,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="UserDbDataSet.xsc">
-      <DependentUpon>UserDbDataSet.xsd</DependentUpon>
+    <None Include="UserDbDataSet1.xsc">
+      <DependentUpon>UserDbDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="UserDbDataSet.xsd">
+    <None Include="UserDbDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>UserDbDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>UserDbDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="UserDbDataSet.xss">
-      <DependentUpon>UserDbDataSet.xsd</DependentUpon>
+    <None Include="UserDbDataSet1.xss">
+      <DependentUpon>UserDbDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +196,13 @@
     <None Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Form\test.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Form\test_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>test.mdf</DependentUpon>
+    </Content>
     <Content Include="Form\UserDb.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

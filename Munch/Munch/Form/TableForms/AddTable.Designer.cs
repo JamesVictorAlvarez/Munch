@@ -45,7 +45,7 @@
             // capacityTextBox
             // 
             this.capacityTextBox.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.capacityTextBox.Location = new System.Drawing.Point(298, 156);
+            this.capacityTextBox.Location = new System.Drawing.Point(235, 143);
             this.capacityTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.capacityTextBox.Name = "capacityTextBox";
             this.capacityTextBox.Size = new System.Drawing.Size(46, 23);
@@ -54,7 +54,7 @@
             // sectionTextBox
             // 
             this.sectionTextBox.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sectionTextBox.Location = new System.Drawing.Point(298, 118);
+            this.sectionTextBox.Location = new System.Drawing.Point(235, 86);
             this.sectionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.sectionTextBox.Name = "sectionTextBox";
             this.sectionTextBox.Size = new System.Drawing.Size(46, 23);
@@ -65,22 +65,22 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(78, 156);
+            this.label4.Location = new System.Drawing.Point(120, 143);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(215, 23);
+            this.label4.Size = new System.Drawing.Size(110, 23);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Capacity (1 to 12):";
+            this.label4.Text = "Capacity:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(89, 118);
+            this.label2.Location = new System.Drawing.Point(131, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 23);
+            this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Section (1 to 10):";
+            this.label2.Text = "Section:";
             // 
             // addTableButton
             // 
@@ -95,7 +95,6 @@
             this.addTableButton.TabIndex = 4;
             this.addTableButton.Text = "Add";
             this.addTableButton.UseVisualStyleBackColor = false;
-            this.addTableButton.Click += new System.EventHandler(this.addTableButton_Click);
             // 
             // pictureMin
             // 

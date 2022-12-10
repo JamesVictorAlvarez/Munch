@@ -32,11 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menu = new System.Windows.Forms.Panel();
+            this.userSubMenu = new System.Windows.Forms.Panel();
+            this.removeUserButton = new System.Windows.Forms.Button();
+            this.addUserButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelPage = new System.Windows.Forms.Panel();
-            this.pictureMin = new System.Windows.Forms.PictureBox();
+            this.userDbDataSet1 = new Munch.UserDbDataSet1();
+            this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.loginTableAdapter = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
+            this.tableAdapterManager = new Munch.UserDbDataSet1TableAdapters.TableAdapterManager();
+            this.min = new System.Windows.Forms.PictureBox();
+            this.close = new System.Windows.Forms.PictureBox();
             this.pictureClose = new System.Windows.Forms.PictureBox();
             this.settingsButton = new System.Windows.Forms.Button();
             this.userButton = new System.Windows.Forms.Button();
@@ -45,17 +53,23 @@
             this.reserveButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menu.SuspendLayout();
+            this.userSubMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.min)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
             // 
+            this.menu.AutoScroll = true;
             this.menu.BackColor = System.Drawing.Color.IndianRed;
             this.menu.Controls.Add(this.settingsButton);
+            this.menu.Controls.Add(this.userSubMenu);
             this.menu.Controls.Add(this.userButton);
             this.menu.Controls.Add(this.tableButton);
             this.menu.Controls.Add(this.customerButton);
@@ -64,8 +78,57 @@
             this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(179, 602);
+            this.menu.Size = new System.Drawing.Size(179, 600);
             this.menu.TabIndex = 3;
+            // 
+            // userSubMenu
+            // 
+            this.userSubMenu.BackColor = System.Drawing.Color.LightCoral;
+            this.userSubMenu.Controls.Add(this.removeUserButton);
+            this.userSubMenu.Controls.Add(this.addUserButton);
+            this.userSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userSubMenu.Location = new System.Drawing.Point(0, 404);
+            this.userSubMenu.Name = "userSubMenu";
+            this.userSubMenu.Size = new System.Drawing.Size(179, 76);
+            this.userSubMenu.TabIndex = 0;
+            // 
+            // removeUserButton
+            // 
+            this.removeUserButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.removeUserButton.FlatAppearance.BorderSize = 0;
+            this.removeUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeUserButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeUserButton.ForeColor = System.Drawing.Color.White;
+            this.removeUserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.removeUserButton.Location = new System.Drawing.Point(0, 39);
+            this.removeUserButton.Name = "removeUserButton";
+            this.removeUserButton.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.removeUserButton.Size = new System.Drawing.Size(179, 37);
+            this.removeUserButton.TabIndex = 6;
+            this.removeUserButton.Text = "Remove User";
+            this.removeUserButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.removeUserButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.removeUserButton.UseVisualStyleBackColor = true;
+            this.removeUserButton.Click += new System.EventHandler(this.removeUserButton_Click);
+            // 
+            // addUserButton
+            // 
+            this.addUserButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addUserButton.FlatAppearance.BorderSize = 0;
+            this.addUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addUserButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addUserButton.ForeColor = System.Drawing.Color.White;
+            this.addUserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addUserButton.Location = new System.Drawing.Point(0, 0);
+            this.addUserButton.Name = "addUserButton";
+            this.addUserButton.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.addUserButton.Size = new System.Drawing.Size(179, 39);
+            this.addUserButton.TabIndex = 5;
+            this.addUserButton.Text = "Add User";
+            this.addUserButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addUserButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addUserButton.UseVisualStyleBackColor = true;
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
             // panel1
             // 
@@ -80,13 +143,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
+            this.panel2.Controls.Add(this.min);
+            this.panel2.Controls.Add(this.close);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureMin);
             this.panel2.Controls.Add(this.pictureClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(179, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(857, 100);
+            this.panel2.Size = new System.Drawing.Size(821, 100);
             this.panel2.TabIndex = 4;
             // 
             // label1
@@ -105,36 +169,63 @@
             this.panelPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPage.Location = new System.Drawing.Point(179, 100);
             this.panelPage.Name = "panelPage";
-            this.panelPage.Size = new System.Drawing.Size(857, 502);
+            this.panelPage.Size = new System.Drawing.Size(821, 500);
             this.panelPage.TabIndex = 5;
             // 
-            // pictureMin
+            // userDbDataSet1
             // 
-            this.pictureMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureMin.Image = global::Munch.Properties.Resources.minimize;
-            this.pictureMin.Location = new System.Drawing.Point(791, 13);
-            this.pictureMin.Name = "pictureMin";
-            this.pictureMin.Size = new System.Drawing.Size(26, 28);
-            this.pictureMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureMin.TabIndex = 2;
-            this.pictureMin.TabStop = false;
-            this.pictureMin.Click += new System.EventHandler(this.pictureMin_Click);
-            this.pictureMin.MouseHover += new System.EventHandler(this.pictureMin_MouseHover);
+            this.userDbDataSet1.DataSetName = "UserDbDataSet1";
+            this.userDbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // loginBindingSource
+            // 
+            this.loginBindingSource.DataMember = "Login";
+            this.loginBindingSource.DataSource = this.userDbDataSet1;
+            // 
+            // loginTableAdapter
+            // 
+            this.loginTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.LoginTableAdapter = this.loginTableAdapter;
+            this.tableAdapterManager.TablesTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Munch.UserDbDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // min
+            // 
+            this.min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.min.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.min.Image = global::Munch.Properties.Resources.minimize;
+            this.min.Location = new System.Drawing.Point(756, 3);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(26, 28);
+            this.min.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.min.TabIndex = 3;
+            this.min.TabStop = false;
+            this.min.Click += new System.EventHandler(this.min_Click);
+            // 
+            // close
+            // 
+            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
+            this.close.Location = new System.Drawing.Point(788, 3);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(26, 28);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 2;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // pictureClose
             // 
-            this.pictureClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureClose.Image")));
-            this.pictureClose.Location = new System.Drawing.Point(823, 13);
+            this.pictureClose.Location = new System.Drawing.Point(0, 0);
             this.pictureClose.Name = "pictureClose";
-            this.pictureClose.Size = new System.Drawing.Size(26, 28);
-            this.pictureClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureClose.TabIndex = 1;
+            this.pictureClose.Size = new System.Drawing.Size(100, 50);
+            this.pictureClose.TabIndex = 5;
             this.pictureClose.TabStop = false;
-            this.pictureClose.Click += new System.EventHandler(this.pictureClose_Click);
-            this.pictureClose.MouseHover += new System.EventHandler(this.pictureClose_MouseHover);
             // 
             // settingsButton
             // 
@@ -145,14 +236,15 @@
             this.settingsButton.ForeColor = System.Drawing.Color.White;
             this.settingsButton.Image = global::Munch.Properties.Resources.settings;
             this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsButton.Location = new System.Drawing.Point(0, 404);
+            this.settingsButton.Location = new System.Drawing.Point(0, 480);
             this.settingsButton.Name = "settingsButton";
             this.settingsButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.settingsButton.Size = new System.Drawing.Size(179, 76);
-            this.settingsButton.TabIndex = 5;
+            this.settingsButton.TabIndex = 8;
             this.settingsButton.Text = "Settings";
             this.settingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
             // userButton
             // 
@@ -171,6 +263,7 @@
             this.userButton.Text = "User";
             this.userButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.userButton.UseVisualStyleBackColor = true;
+            this.userButton.Click += new System.EventHandler(this.userButton_Click);
             // 
             // tableButton
             // 
@@ -244,7 +337,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1036, 602);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panelPage);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menu);
@@ -254,10 +347,14 @@
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.menu.ResumeLayout(false);
+            this.userSubMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.min)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -267,12 +364,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureClose;
-        private System.Windows.Forms.PictureBox pictureMin;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.Button reserveButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button settingsButton;
+        private System.Windows.Forms.Button removeUserButton;
         private System.Windows.Forms.Button userButton;
         private System.Windows.Forms.Button tableButton;
         private System.Windows.Forms.Button customerButton;
@@ -280,5 +376,14 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Panel panelPage;
+        private UserDbDataSet1 userDbDataSet1;
+        private System.Windows.Forms.BindingSource loginBindingSource;
+        private UserDbDataSet1TableAdapters.LoginTableAdapter loginTableAdapter;
+        private UserDbDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Button addUserButton;
+        private System.Windows.Forms.Panel userSubMenu;
+        private System.Windows.Forms.Button settingsButton;
+        private System.Windows.Forms.PictureBox min;
+        private System.Windows.Forms.PictureBox close;
     }
 }

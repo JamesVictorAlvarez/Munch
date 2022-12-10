@@ -14,7 +14,8 @@ namespace Munch
 {
     public partial class Login : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Jericho Nieva\OneDrive - Vanier College\School\Semester 3\ApplicationDevelopment\Munch\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
+
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
         public Login()
         {
             InitializeComponent();
@@ -79,12 +80,12 @@ namespace Munch
                 try
                 {
                     string querry = "SELECT * FROM Login WHERE username = '" + username + "' AND password = '"+ password +"'";
-                    SqlDataAdapter adapter = new SqlDataAdapter(querry, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(querry, connection); // The statements and connection string
 
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
+                    DataTable dataTable = new DataTable(); //Put in a new data table
+                    adapter.Fill(dataTable); //Put the data in the data table
 
-                    if (dataTable.Rows.Count > 0)
+                    if (dataTable.Rows.Count > 0) //If there is data, succesfully logged in 
                     {
                         username = usernameText.Text.Trim();
                         password = passwordText.Text.Trim();
@@ -93,7 +94,7 @@ namespace Munch
                         home.Show();
                         this.Hide();
                     }
-                    else
+                    else //Data table was empty so no user exist
                         MessageBox.Show("Username or Password Invalid", "Username or Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 catch
