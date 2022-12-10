@@ -32,41 +32,53 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menu = new System.Windows.Forms.Panel();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.userSubMenu = new System.Windows.Forms.Panel();
             this.removeUserButton = new System.Windows.Forms.Button();
             this.addUserButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelPage = new System.Windows.Forms.Panel();
-            this.userDbDataSet1 = new Munch.UserDbDataSet1();
-            this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.loginTableAdapter = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
-            this.tableAdapterManager = new Munch.UserDbDataSet1TableAdapters.TableAdapterManager();
-            this.min = new System.Windows.Forms.PictureBox();
-            this.close = new System.Windows.Forms.PictureBox();
-            this.pictureClose = new System.Windows.Forms.PictureBox();
-            this.settingsButton = new System.Windows.Forms.Button();
             this.userButton = new System.Windows.Forms.Button();
             this.tableButton = new System.Windows.Forms.Button();
             this.customerButton = new System.Windows.Forms.Button();
             this.reserveButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.time = new System.Windows.Forms.Label();
+            this.date = new System.Windows.Forms.Label();
+            this.closePanel = new System.Windows.Forms.Button();
+            this.min = new System.Windows.Forms.PictureBox();
+            this.close = new System.Windows.Forms.PictureBox();
+            this.title = new System.Windows.Forms.Label();
+            this.panelPage = new System.Windows.Forms.Panel();
+            this.settingsPanel = new System.Windows.Forms.Panel();
+            this.homePicture = new System.Windows.Forms.PictureBox();
+            this.logoutButton = new System.Windows.Forms.Button();
+            this.audioLabel = new System.Windows.Forms.Label();
+            this.darkLabel = new System.Windows.Forms.Label();
+            this.languageBox = new System.Windows.Forms.ComboBox();
+            this.langLabel = new System.Windows.Forms.Label();
+            this.userDbDataSet1 = new Munch.UserDbDataSet1();
+            this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.loginTableAdapter = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
+            this.tableAdapterManager = new Munch.UserDbDataSet1TableAdapters.TableAdapterManager();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.menu.SuspendLayout();
             this.userSubMenu.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelPage.SuspendLayout();
+            this.settingsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menu
             // 
-            this.menu.AutoScroll = true;
+            resources.ApplyResources(this.menu, "menu");
             this.menu.BackColor = System.Drawing.Color.IndianRed;
             this.menu.Controls.Add(this.settingsButton);
             this.menu.Controls.Add(this.userSubMenu);
@@ -75,102 +87,216 @@
             this.menu.Controls.Add(this.customerButton);
             this.menu.Controls.Add(this.reserveButton);
             this.menu.Controls.Add(this.panel1);
-            this.menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(179, 600);
-            this.menu.TabIndex = 3;
+            // 
+            // settingsButton
+            // 
+            resources.ApplyResources(this.settingsButton, "settingsButton");
+            this.settingsButton.FlatAppearance.BorderSize = 0;
+            this.settingsButton.ForeColor = System.Drawing.Color.White;
+            this.settingsButton.Image = global::Munch.Properties.Resources.settings;
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
             // userSubMenu
             // 
             this.userSubMenu.BackColor = System.Drawing.Color.LightCoral;
             this.userSubMenu.Controls.Add(this.removeUserButton);
             this.userSubMenu.Controls.Add(this.addUserButton);
-            this.userSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userSubMenu.Location = new System.Drawing.Point(0, 404);
+            resources.ApplyResources(this.userSubMenu, "userSubMenu");
             this.userSubMenu.Name = "userSubMenu";
-            this.userSubMenu.Size = new System.Drawing.Size(179, 76);
-            this.userSubMenu.TabIndex = 0;
             // 
             // removeUserButton
             // 
-            this.removeUserButton.Dock = System.Windows.Forms.DockStyle.Top;
+            resources.ApplyResources(this.removeUserButton, "removeUserButton");
             this.removeUserButton.FlatAppearance.BorderSize = 0;
-            this.removeUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeUserButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.removeUserButton.ForeColor = System.Drawing.Color.White;
-            this.removeUserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.removeUserButton.Location = new System.Drawing.Point(0, 39);
             this.removeUserButton.Name = "removeUserButton";
-            this.removeUserButton.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.removeUserButton.Size = new System.Drawing.Size(179, 37);
-            this.removeUserButton.TabIndex = 6;
-            this.removeUserButton.Text = "Remove User";
-            this.removeUserButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.removeUserButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.removeUserButton.UseVisualStyleBackColor = true;
             this.removeUserButton.Click += new System.EventHandler(this.removeUserButton_Click);
             // 
             // addUserButton
             // 
-            this.addUserButton.Dock = System.Windows.Forms.DockStyle.Top;
+            resources.ApplyResources(this.addUserButton, "addUserButton");
             this.addUserButton.FlatAppearance.BorderSize = 0;
-            this.addUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addUserButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addUserButton.ForeColor = System.Drawing.Color.White;
-            this.addUserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addUserButton.Location = new System.Drawing.Point(0, 0);
             this.addUserButton.Name = "addUserButton";
-            this.addUserButton.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.addUserButton.Size = new System.Drawing.Size(179, 39);
-            this.addUserButton.TabIndex = 5;
-            this.addUserButton.Text = "Add User";
-            this.addUserButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addUserButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.addUserButton.UseVisualStyleBackColor = true;
             this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
+            // 
+            // userButton
+            // 
+            resources.ApplyResources(this.userButton, "userButton");
+            this.userButton.FlatAppearance.BorderSize = 0;
+            this.userButton.ForeColor = System.Drawing.Color.White;
+            this.userButton.Image = global::Munch.Properties.Resources.user;
+            this.userButton.Name = "userButton";
+            this.userButton.UseVisualStyleBackColor = true;
+            this.userButton.Click += new System.EventHandler(this.userButton_Click);
+            // 
+            // tableButton
+            // 
+            resources.ApplyResources(this.tableButton, "tableButton");
+            this.tableButton.FlatAppearance.BorderSize = 0;
+            this.tableButton.ForeColor = System.Drawing.Color.White;
+            this.tableButton.Image = global::Munch.Properties.Resources.table;
+            this.tableButton.Name = "tableButton";
+            this.tableButton.UseVisualStyleBackColor = true;
+            this.tableButton.Click += new System.EventHandler(this.tableButton_Click);
+            // 
+            // customerButton
+            // 
+            resources.ApplyResources(this.customerButton, "customerButton");
+            this.customerButton.FlatAppearance.BorderSize = 0;
+            this.customerButton.ForeColor = System.Drawing.Color.White;
+            this.customerButton.Image = global::Munch.Properties.Resources.customer;
+            this.customerButton.Name = "customerButton";
+            this.customerButton.UseVisualStyleBackColor = true;
+            // 
+            // reserveButton
+            // 
+            resources.ApplyResources(this.reserveButton, "reserveButton");
+            this.reserveButton.FlatAppearance.BorderSize = 0;
+            this.reserveButton.ForeColor = System.Drawing.Color.White;
+            this.reserveButton.Image = global::Munch.Properties.Resources.reserve2;
+            this.reserveButton.Name = "reserveButton";
+            this.reserveButton.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 100);
-            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(44)))));
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::Munch.Properties.Resources.logo;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.IndianRed;
+            this.panel2.Controls.Add(this.time);
+            this.panel2.Controls.Add(this.date);
+            this.panel2.Controls.Add(this.closePanel);
             this.panel2.Controls.Add(this.min);
             this.panel2.Controls.Add(this.close);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureClose);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(179, 0);
+            this.panel2.Controls.Add(this.title);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(821, 100);
-            this.panel2.TabIndex = 4;
             // 
-            // label1
+            // time
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(405, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "HOME";
+            resources.ApplyResources(this.time, "time");
+            this.time.Name = "time";
+            // 
+            // date
+            // 
+            resources.ApplyResources(this.date, "date");
+            this.date.Name = "date";
+            // 
+            // closePanel
+            // 
+            this.closePanel.BackColor = System.Drawing.Color.Transparent;
+            this.closePanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closePanel.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.closePanel, "closePanel");
+            this.closePanel.Image = global::Munch.Properties.Resources.home;
+            this.closePanel.Name = "closePanel";
+            this.closePanel.UseVisualStyleBackColor = false;
+            this.closePanel.Click += new System.EventHandler(this.closePanel_Click);
+            // 
+            // min
+            // 
+            resources.ApplyResources(this.min, "min");
+            this.min.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.min.Image = global::Munch.Properties.Resources.minimize;
+            this.min.Name = "min";
+            this.min.TabStop = false;
+            this.min.Click += new System.EventHandler(this.min_Click);
+            // 
+            // close
+            // 
+            resources.ApplyResources(this.close, "close");
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Name = "close";
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // title
+            // 
+            resources.ApplyResources(this.title, "title");
+            this.title.ForeColor = System.Drawing.Color.White;
+            this.title.Name = "title";
             // 
             // panelPage
             // 
-            this.panelPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPage.Location = new System.Drawing.Point(179, 100);
+            this.panelPage.Controls.Add(this.homePicture);
+            this.panelPage.Controls.Add(this.settingsPanel);
+            resources.ApplyResources(this.panelPage, "panelPage");
             this.panelPage.Name = "panelPage";
-            this.panelPage.Size = new System.Drawing.Size(821, 500);
-            this.panelPage.TabIndex = 5;
+            // 
+            // settingsPanel
+            // 
+            this.settingsPanel.BackColor = System.Drawing.Color.IndianRed;
+            this.settingsPanel.Controls.Add(this.logoutButton);
+            this.settingsPanel.Controls.Add(this.audioLabel);
+            this.settingsPanel.Controls.Add(this.darkLabel);
+            this.settingsPanel.Controls.Add(this.languageBox);
+            this.settingsPanel.Controls.Add(this.langLabel);
+            resources.ApplyResources(this.settingsPanel, "settingsPanel");
+            this.settingsPanel.Name = "settingsPanel";
+            // 
+            // homePicture
+            // 
+            this.homePicture.Image = global::Munch.Properties.Resources.menu;
+            resources.ApplyResources(this.homePicture, "homePicture");
+            this.homePicture.Name = "homePicture";
+            this.homePicture.TabStop = false;
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.BackColor = System.Drawing.Color.White;
+            this.logoutButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.logoutButton, "logoutButton");
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
+            // audioLabel
+            // 
+            resources.ApplyResources(this.audioLabel, "audioLabel");
+            this.audioLabel.ForeColor = System.Drawing.Color.White;
+            this.audioLabel.Name = "audioLabel";
+            // 
+            // darkLabel
+            // 
+            resources.ApplyResources(this.darkLabel, "darkLabel");
+            this.darkLabel.ForeColor = System.Drawing.Color.White;
+            this.darkLabel.Name = "darkLabel";
+            // 
+            // languageBox
+            // 
+            this.languageBox.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.languageBox, "languageBox");
+            this.languageBox.FormattingEnabled = true;
+            this.languageBox.Items.AddRange(new object[] {
+            resources.GetString("languageBox.Items"),
+            resources.GetString("languageBox.Items1"),
+            resources.GetString("languageBox.Items2")});
+            this.languageBox.Name = "languageBox";
+            this.languageBox.SelectedIndexChanged += new System.EventHandler(this.languageBox_SelectedIndexChanged);
+            // 
+            // langLabel
+            // 
+            resources.ApplyResources(this.langLabel, "langLabel");
+            this.langLabel.ForeColor = System.Drawing.Color.White;
+            this.langLabel.Name = "langLabel";
             // 
             // userDbDataSet1
             // 
@@ -193,177 +319,40 @@
             this.tableAdapterManager.TablesTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Munch.UserDbDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // min
+            // timer
             // 
-            this.min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.min.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.min.Image = global::Munch.Properties.Resources.minimize;
-            this.min.Location = new System.Drawing.Point(756, 3);
-            this.min.Name = "min";
-            this.min.Size = new System.Drawing.Size(26, 28);
-            this.min.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.min.TabIndex = 3;
-            this.min.TabStop = false;
-            this.min.Click += new System.EventHandler(this.min_Click);
-            // 
-            // close
-            // 
-            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
-            this.close.Location = new System.Drawing.Point(788, 3);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(26, 28);
-            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.close.TabIndex = 2;
-            this.close.TabStop = false;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
-            // pictureClose
-            // 
-            this.pictureClose.Location = new System.Drawing.Point(0, 0);
-            this.pictureClose.Name = "pictureClose";
-            this.pictureClose.Size = new System.Drawing.Size(100, 50);
-            this.pictureClose.TabIndex = 5;
-            this.pictureClose.TabStop = false;
-            // 
-            // settingsButton
-            // 
-            this.settingsButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.settingsButton.FlatAppearance.BorderSize = 0;
-            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsButton.ForeColor = System.Drawing.Color.White;
-            this.settingsButton.Image = global::Munch.Properties.Resources.settings;
-            this.settingsButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsButton.Location = new System.Drawing.Point(0, 480);
-            this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.settingsButton.Size = new System.Drawing.Size(179, 76);
-            this.settingsButton.TabIndex = 8;
-            this.settingsButton.Text = "Settings";
-            this.settingsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.settingsButton.UseVisualStyleBackColor = true;
-            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
-            // 
-            // userButton
-            // 
-            this.userButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userButton.FlatAppearance.BorderSize = 0;
-            this.userButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.userButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userButton.ForeColor = System.Drawing.Color.White;
-            this.userButton.Image = global::Munch.Properties.Resources.user;
-            this.userButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.userButton.Location = new System.Drawing.Point(0, 328);
-            this.userButton.Name = "userButton";
-            this.userButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.userButton.Size = new System.Drawing.Size(179, 76);
-            this.userButton.TabIndex = 4;
-            this.userButton.Text = "User";
-            this.userButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.userButton.UseVisualStyleBackColor = true;
-            this.userButton.Click += new System.EventHandler(this.userButton_Click);
-            // 
-            // tableButton
-            // 
-            this.tableButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableButton.FlatAppearance.BorderSize = 0;
-            this.tableButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tableButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableButton.ForeColor = System.Drawing.Color.White;
-            this.tableButton.Image = global::Munch.Properties.Resources.table;
-            this.tableButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tableButton.Location = new System.Drawing.Point(0, 252);
-            this.tableButton.Name = "tableButton";
-            this.tableButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.tableButton.Size = new System.Drawing.Size(179, 76);
-            this.tableButton.TabIndex = 3;
-            this.tableButton.Text = "Tables";
-            this.tableButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.tableButton.UseVisualStyleBackColor = true;
-            this.tableButton.Click += new System.EventHandler(this.tableButton_Click);
-            // 
-            // customerButton
-            // 
-            this.customerButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.customerButton.FlatAppearance.BorderSize = 0;
-            this.customerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customerButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerButton.ForeColor = System.Drawing.Color.White;
-            this.customerButton.Image = global::Munch.Properties.Resources.customer;
-            this.customerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customerButton.Location = new System.Drawing.Point(0, 176);
-            this.customerButton.Name = "customerButton";
-            this.customerButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.customerButton.Size = new System.Drawing.Size(179, 76);
-            this.customerButton.TabIndex = 2;
-            this.customerButton.Text = "Customer";
-            this.customerButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.customerButton.UseVisualStyleBackColor = true;
-            // 
-            // reserveButton
-            // 
-            this.reserveButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.reserveButton.FlatAppearance.BorderSize = 0;
-            this.reserveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reserveButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reserveButton.ForeColor = System.Drawing.Color.White;
-            this.reserveButton.Image = global::Munch.Properties.Resources.reserve2;
-            this.reserveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.reserveButton.Location = new System.Drawing.Point(0, 100);
-            this.reserveButton.Name = "reserveButton";
-            this.reserveButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.reserveButton.Size = new System.Drawing.Size(179, 76);
-            this.reserveButton.TabIndex = 1;
-            this.reserveButton.Text = "Reservation";
-            this.reserveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.reserveButton.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(44)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Munch.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(179, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panelPage);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.menu.ResumeLayout(false);
             this.userSubMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelPage.ResumeLayout(false);
+            this.settingsPanel.ResumeLayout(false);
+            this.settingsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureClose;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.Button reserveButton;
@@ -374,7 +363,7 @@
         private System.Windows.Forms.Button customerButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label title;
         public System.Windows.Forms.Panel panelPage;
         private UserDbDataSet1 userDbDataSet1;
         private System.Windows.Forms.BindingSource loginBindingSource;
@@ -385,5 +374,16 @@
         private System.Windows.Forms.Button settingsButton;
         private System.Windows.Forms.PictureBox min;
         private System.Windows.Forms.PictureBox close;
+        private System.Windows.Forms.Button closePanel;
+        private System.Windows.Forms.Label time;
+        private System.Windows.Forms.Label date;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Panel settingsPanel;
+        private System.Windows.Forms.ComboBox languageBox;
+        private System.Windows.Forms.Label langLabel;
+        private System.Windows.Forms.Label audioLabel;
+        private System.Windows.Forms.Label darkLabel;
+        private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.PictureBox homePicture;
     }
 }

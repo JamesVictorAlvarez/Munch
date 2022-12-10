@@ -32,24 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.showPicture = new System.Windows.Forms.PictureBox();
             this.passwordText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.usernameText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.hidePicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.showPicture = new System.Windows.Forms.PictureBox();
+            this.hidePicture = new System.Windows.Forms.PictureBox();
             this.pictureMin = new System.Windows.Forms.PictureBox();
             this.pictureClose = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.showPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,19 +73,6 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " Login";
-            // 
-            // showPicture
-            // 
-            this.showPicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showPicture.Image = global::Munch.Properties.Resources.unhidden;
-            this.showPicture.Location = new System.Drawing.Point(296, 161);
-            this.showPicture.Name = "showPicture";
-            this.showPicture.Size = new System.Drawing.Size(24, 23);
-            this.showPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.showPicture.TabIndex = 4;
-            this.showPicture.TabStop = false;
-            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
-            this.showPicture.MouseHover += new System.EventHandler(this.showPicture_MouseHover);
             // 
             // passwordText
             // 
@@ -145,19 +132,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Username: ";
             // 
-            // hidePicture
-            // 
-            this.hidePicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hidePicture.Image = global::Munch.Properties.Resources.hidden;
-            this.hidePicture.Location = new System.Drawing.Point(296, 161);
-            this.hidePicture.Name = "hidePicture";
-            this.hidePicture.Size = new System.Drawing.Size(24, 23);
-            this.hidePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hidePicture.TabIndex = 5;
-            this.hidePicture.TabStop = false;
-            this.hidePicture.Click += new System.EventHandler(this.hidePicture_Click);
-            this.hidePicture.MouseHover += new System.EventHandler(this.hidePicture_MouseHover);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
@@ -184,6 +158,32 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // showPicture
+            // 
+            this.showPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showPicture.Image = global::Munch.Properties.Resources.unhidden;
+            this.showPicture.Location = new System.Drawing.Point(296, 161);
+            this.showPicture.Name = "showPicture";
+            this.showPicture.Size = new System.Drawing.Size(24, 23);
+            this.showPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.showPicture.TabIndex = 4;
+            this.showPicture.TabStop = false;
+            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
+            this.showPicture.MouseHover += new System.EventHandler(this.showPicture_MouseHover);
+            // 
+            // hidePicture
+            // 
+            this.hidePicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hidePicture.Image = global::Munch.Properties.Resources.hidden;
+            this.hidePicture.Location = new System.Drawing.Point(296, 161);
+            this.hidePicture.Name = "hidePicture";
+            this.hidePicture.Size = new System.Drawing.Size(24, 23);
+            this.hidePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hidePicture.TabIndex = 5;
+            this.hidePicture.TabStop = false;
+            this.hidePicture.Click += new System.EventHandler(this.hidePicture_Click);
+            this.hidePicture.MouseHover += new System.EventHandler(this.hidePicture_MouseHover);
             // 
             // pictureMin
             // 
@@ -236,15 +236,16 @@
             this.Controls.Add(this.pictureClose);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.showPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

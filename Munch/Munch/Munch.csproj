@@ -116,6 +116,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UserDbDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\Home.es.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home.fo.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home.fr-CA.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,8 +143,20 @@
     <EmbeddedResource Include="Form\TableForms\RemoveTable.resx">
       <DependentUpon>RemoveTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\AddUser.es.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\AddUser.fr-CA.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\UserForms\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\RemoveUser.es.resx">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\RemoveUser.fr-CA.resx">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\UserForms\RemoveUser.resx">
       <DependentUpon>RemoveUser.cs</DependentUpon>
@@ -196,13 +217,6 @@
     <None Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Form\test.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Form\test_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>test.mdf</DependentUpon>
-    </Content>
     <Content Include="Form\UserDb.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -210,6 +224,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>UserDb.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\home.png" />
+    <None Include="Resources\closePanel2.png" />
+    <None Include="Resources\closePanel.png" />
     <None Include="Resources\user.png" />
     <None Include="Resources\table.png" />
     <None Include="Resources\settings.png" />
