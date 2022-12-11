@@ -48,11 +48,20 @@ namespace Munch
         //Hide the sub panels on start
         private void OnStartSubPanel() 
         {
+            reservationSubMenu.Visible = false;
+            customerSubMenu.Visible = false;
+            tablesSubMenu.Visible = false;
             userSubMenu.Visible = false;
         }
 
-        private void HideSubPanel()
+        private void HideSubPanel() //Hide all the sub panels
         {
+            if (reservationSubMenu.Visible == true)
+                reservationSubMenu.Visible = false;
+            if (customerSubMenu.Visible == true)
+                customerSubMenu.Visible = false;
+            if (tablesSubMenu.Visible == true)
+                tablesSubMenu.Visible = false;
             if (userSubMenu.Visible == true)
                 userSubMenu.Visible = false;
         }
@@ -92,7 +101,7 @@ namespace Munch
                 title.Text = "Tables";
             if (currLang == "es")
                 title.Text = "Mesas";
-            OpenForm(new Table());
+            showSubPanel(tablesSubMenu);
         }
 
         private void loginBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -210,6 +219,7 @@ namespace Munch
             this.Controls.Clear();
             InitializeComponent();
             HideSubPanel();
+            homePicture.Visible = false;
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
@@ -220,5 +230,59 @@ namespace Munch
             this.Close();
         }
 
+        private void reserveButton_Click(object sender, EventArgs e)
+        {
+            showSubPanel(reservationSubMenu);
+        }
+
+        private void customerButton_Click(object sender, EventArgs e)
+        {
+            showSubPanel(customerSubMenu);
+            OpenForm(new ViewCustomer());
+        }
+
+        private void addCustomer_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Add Customer";
+            if (currLang == "fr")
+                title.Text = "Ajouter un Client";
+            if (currLang == "es")
+                title.Text = "Agregar Cliente";
+            OpenForm(new AddCustomer());
+        }
+
+        private void removeCustomer_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Remove Customer";
+            if (currLang == "fr")
+                title.Text = "Supprimer un Client";
+            if (currLang == "es")
+                title.Text = "Eliminar Cliente";
+            OpenForm(new RemoveCustomer());
+        }
+
+        private void modifyCustomer_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Modify Customer";
+            if (currLang == "fr")
+                title.Text = "Modifier un Client";
+            if (currLang == "es")
+                title.Text = "Modificar Cliente";
+            OpenForm(new ModifyCustomer());
+        }
+
+        private void searchCustomer_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Search Customer";
+            if (currLang == "fr")
+                title.Text = "Chercher un Client";
+            if (currLang == "es")
+                title.Text = "Búsqueda Cliente";
+            OpenForm(new SearchCustomer());
+        }
     }
 }

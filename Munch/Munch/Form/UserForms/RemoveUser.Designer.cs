@@ -39,19 +39,19 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Controls.Add(this.removeButton);
             this.panel1.Controls.Add(this.userText);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // removeButton
             // 
-            resources.ApplyResources(this.removeButton, "removeButton");
             this.removeButton.BackColor = System.Drawing.Color.White;
             this.removeButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.removeButton, "removeButton");
             this.removeButton.ForeColor = System.Drawing.Color.Black;
             this.removeButton.Name = "removeButton";
             this.removeButton.UseVisualStyleBackColor = false;
@@ -59,8 +59,8 @@
             // 
             // userText
             // 
-            resources.ApplyResources(this.userText, "userText");
             this.userText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.userText, "userText");
             this.userText.Name = "userText";
             // 
             // label2

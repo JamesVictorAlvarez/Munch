@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUser));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.showPicture = new System.Windows.Forms.PictureBox();
+            this.hidePicture = new System.Windows.Forms.PictureBox();
             this.addButton = new System.Windows.Forms.Button();
             this.passText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,18 +45,15 @@
             this.tableAdapterManager = new Munch.UserDbDataSet1TableAdapters.TableAdapterManager();
             this.loginTableAdapter1 = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
             this.loginTableAdapter2 = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
-            this.showPicture = new System.Windows.Forms.PictureBox();
-            this.hidePicture = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Controls.Add(this.showPicture);
             this.panel1.Controls.Add(this.hidePicture);
@@ -64,13 +63,32 @@
             this.panel1.Controls.Add(this.userText);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // showPicture
+            // 
+            this.showPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showPicture.Image = global::Munch.Properties.Resources.unhidden;
+            resources.ApplyResources(this.showPicture, "showPicture");
+            this.showPicture.Name = "showPicture";
+            this.showPicture.TabStop = false;
+            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
+            // 
+            // hidePicture
+            // 
+            this.hidePicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hidePicture.Image = global::Munch.Properties.Resources.hidden;
+            resources.ApplyResources(this.hidePicture, "hidePicture");
+            this.hidePicture.Name = "hidePicture";
+            this.hidePicture.TabStop = false;
+            this.hidePicture.Click += new System.EventHandler(this.hidePicture_Click);
             // 
             // addButton
             // 
-            resources.ApplyResources(this.addButton, "addButton");
             this.addButton.BackColor = System.Drawing.Color.White;
             this.addButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.addButton, "addButton");
             this.addButton.ForeColor = System.Drawing.Color.Black;
             this.addButton.Name = "addButton";
             this.addButton.UseVisualStyleBackColor = false;
@@ -78,8 +96,8 @@
             // 
             // passText
             // 
-            resources.ApplyResources(this.passText, "passText");
             this.passText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.passText, "passText");
             this.passText.Name = "passText";
             this.passText.UseSystemPasswordChar = true;
             // 
@@ -91,8 +109,8 @@
             // 
             // userText
             // 
-            resources.ApplyResources(this.userText, "userText");
             this.userText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.userText, "userText");
             this.userText.Name = "userText";
             // 
             // label2
@@ -136,24 +154,6 @@
             // 
             this.loginTableAdapter2.ClearBeforeFill = true;
             // 
-            // showPicture
-            // 
-            resources.ApplyResources(this.showPicture, "showPicture");
-            this.showPicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showPicture.Image = global::Munch.Properties.Resources.unhidden;
-            this.showPicture.Name = "showPicture";
-            this.showPicture.TabStop = false;
-            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
-            // 
-            // hidePicture
-            // 
-            resources.ApplyResources(this.hidePicture, "hidePicture");
-            this.hidePicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hidePicture.Image = global::Munch.Properties.Resources.hidden;
-            this.hidePicture.Name = "hidePicture";
-            this.hidePicture.TabStop = false;
-            this.hidePicture.Click += new System.EventHandler(this.hidePicture_Click);
-            // 
             // AddUser
             // 
             resources.ApplyResources(this, "$this");
@@ -165,10 +165,10 @@
             this.Load += new System.EventHandler(this.AddUser_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

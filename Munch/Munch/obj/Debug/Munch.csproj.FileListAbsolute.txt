@@ -31,3 +31,8 @@ D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.RemoveUser.es.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.RemoveUser.fr-CA.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\es\Munch.resources.dll
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.Home.es.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.AddCustomer.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ModifyCustomer.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.RemoveCustomer.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.SearchCustomer.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ViewCustomer.resources

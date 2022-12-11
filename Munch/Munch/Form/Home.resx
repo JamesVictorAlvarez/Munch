@@ -126,7 +126,7 @@
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="settingsButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>Bottom</value>
   </data>
   <data name="settingsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -142,13 +142,13 @@
     <value>NoControl</value>
   </data>
   <data name="settingsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 480</value>
+    <value>0, 851</value>
   </data>
   <data name="settingsButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="settingsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 76</value>
+    <value>165, 76</value>
   </data>
   <data name="settingsButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -199,10 +199,10 @@
     <value>Top</value>
   </data>
   <data name="userSubMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 404</value>
+    <value>0, 781</value>
   </data>
   <data name="userSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 76</value>
+    <value>165, 70</value>
   </data>
   <data name="userSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -235,13 +235,13 @@
     <value>NoControl</value>
   </data>
   <data name="userButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 328</value>
+    <value>0, 705</value>
   </data>
   <data name="userButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="userButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 76</value>
+    <value>165, 76</value>
   </data>
   <data name="userButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -264,6 +264,78 @@
   <data name="&gt;&gt;userButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;searchTables.Name" xml:space="preserve">
+    <value>searchTables</value>
+  </data>
+  <data name="&gt;&gt;searchTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;searchTables.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.Name" xml:space="preserve">
+    <value>modifyTables</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;removeTables.Name" xml:space="preserve">
+    <value>removeTables</value>
+  </data>
+  <data name="&gt;&gt;removeTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;removeTables.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;addTables.Name" xml:space="preserve">
+    <value>addTables</value>
+  </data>
+  <data name="&gt;&gt;addTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;addTables.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tablesSubMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tablesSubMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 570</value>
+  </data>
+  <data name="tablesSubMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 135</value>
+  </data>
+  <data name="tablesSubMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tablesSubMenu.Name" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;tablesSubMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tablesSubMenu.Parent" xml:space="preserve">
+    <value>menu</value>
+  </data>
+  <data name="&gt;&gt;tablesSubMenu.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="tableButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -280,13 +352,13 @@
     <value>NoControl</value>
   </data>
   <data name="tableButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 252</value>
+    <value>0, 494</value>
   </data>
   <data name="tableButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="tableButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 76</value>
+    <value>165, 76</value>
   </data>
   <data name="tableButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -307,7 +379,79 @@
     <value>menu</value>
   </data>
   <data name="&gt;&gt;tableButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.Name" xml:space="preserve">
+    <value>searchCustomer</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.Name" xml:space="preserve">
+    <value>modifyCustomer</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.Name" xml:space="preserve">
+    <value>removeCustomer</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.Name" xml:space="preserve">
+    <value>addCustomer</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="customerSubMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="customerSubMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 358</value>
+  </data>
+  <data name="customerSubMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 136</value>
+  </data>
+  <data name="customerSubMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;customerSubMenu.Name" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;customerSubMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;customerSubMenu.Parent" xml:space="preserve">
+    <value>menu</value>
+  </data>
+  <data name="&gt;&gt;customerSubMenu.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="customerButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -325,13 +469,13 @@
     <value>NoControl</value>
   </data>
   <data name="customerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 176</value>
+    <value>0, 282</value>
   </data>
   <data name="customerButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
   </data>
   <data name="customerButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 76</value>
+    <value>165, 76</value>
   </data>
   <data name="customerButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -352,7 +496,67 @@
     <value>menu</value>
   </data>
   <data name="&gt;&gt;customerButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.Name" xml:space="preserve">
+    <value>modifyReservation</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.Parent" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.Name" xml:space="preserve">
+    <value>deleteReservation</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.Parent" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;addReservation.Name" xml:space="preserve">
+    <value>addReservation</value>
+  </data>
+  <data name="&gt;&gt;addReservation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addReservation.Parent" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;addReservation.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="reservationSubMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="reservationSubMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 176</value>
+  </data>
+  <data name="reservationSubMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 106</value>
+  </data>
+  <data name="reservationSubMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;reservationSubMenu.Name" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;reservationSubMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reservationSubMenu.Parent" xml:space="preserve">
+    <value>menu</value>
+  </data>
+  <data name="&gt;&gt;reservationSubMenu.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="reserveButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -376,7 +580,7 @@
     <value>10, 0, 0, 0</value>
   </data>
   <data name="reserveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 76</value>
+    <value>165, 76</value>
   </data>
   <data name="reserveButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -397,7 +601,7 @@
     <value>menu</value>
   </data>
   <data name="&gt;&gt;reserveButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
@@ -418,7 +622,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 100</value>
+    <value>165, 100</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -433,7 +637,7 @@
     <value>menu</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -442,7 +646,7 @@
     <value>0, 0</value>
   </data>
   <data name="menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 600</value>
+    <value>182, 708</value>
   </data>
   <data name="menu.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -481,7 +685,7 @@
     <value>45, 0, 0, 0</value>
   </data>
   <data name="removeUserButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 37</value>
+    <value>165, 31</value>
   </data>
   <data name="removeUserButton.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -529,7 +733,7 @@
     <value>45, 0, 0, 0</value>
   </data>
   <data name="addUserButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 39</value>
+    <value>165, 39</value>
   </data>
   <data name="addUserButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -553,135 +757,6 @@
     <value>userSubMenu</value>
   </data>
   <data name="&gt;&gt;addUserButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 100</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="title.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="&gt;&gt;time.Name" xml:space="preserve">
-    <value>time</value>
-  </data>
-  <data name="&gt;&gt;time.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;time.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;time.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;date.Name" xml:space="preserve">
-    <value>date</value>
-  </data>
-  <data name="&gt;&gt;date.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;date.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;date.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;closePanel.Name" xml:space="preserve">
-    <value>closePanel</value>
-  </data>
-  <data name="&gt;&gt;closePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;closePanel.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;closePanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;min.Name" xml:space="preserve">
-    <value>min</value>
-  </data>
-  <data name="&gt;&gt;min.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;min.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;min.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;close.Name" xml:space="preserve">
-    <value>close</value>
-  </data>
-  <data name="&gt;&gt;close.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;close.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;close.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;title.Name" xml:space="preserve">
-    <value>title</value>
-  </data>
-  <data name="&gt;&gt;title.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;title.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;title.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 100</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="time.AutoSize" type="System.Boolean, mscorlib">
@@ -757,7 +832,7 @@
     <value>NoControl</value>
   </data>
   <data name="closePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 51</value>
+    <value>3, 62</value>
   </data>
   <data name="closePanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -784,7 +859,7 @@
     <value>NoControl</value>
   </data>
   <data name="min.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 3</value>
+    <value>953, 3</value>
   </data>
   <data name="min.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 28</value>
@@ -1035,7 +1110,7 @@
     <value>NoControl</value>
   </data>
   <data name="close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 3</value>
+    <value>985, 3</value>
   </data>
   <data name="close.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 28</value>
@@ -1097,8 +1172,35 @@
   <data name="&gt;&gt;title.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 100</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="homePicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="homePicture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 50</value>
+    <value>234, 47</value>
   </data>
   <data name="homePicture.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 398</value>
@@ -1206,10 +1308,10 @@
     <value>Fill</value>
   </data>
   <data name="panelPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 100</value>
+    <value>182, 100</value>
   </data>
   <data name="panelPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 500</value>
+    <value>1018, 608</value>
   </data>
   <data name="panelPage.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1231,6 +1333,9 @@
   </data>
   <data name="logoutButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="logoutButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="logoutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 244</value>
@@ -1406,6 +1511,564 @@
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>735, 3</value>
   </metadata>
+  <data name="deleteReservation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="deleteReservation.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="deleteReservation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="deleteReservation.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="deleteReservation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="deleteReservation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="deleteReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 0, 0, 0</value>
+  </data>
+  <data name="deleteReservation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="deleteReservation.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="deleteReservation.Text" xml:space="preserve">
+    <value>Delete Reservation</value>
+  </data>
+  <data name="deleteReservation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="deleteReservation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.Name" xml:space="preserve">
+    <value>deleteReservation</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.Parent" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;deleteReservation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="addReservation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="addReservation.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="addReservation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="addReservation.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addReservation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addReservation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="addReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 0, 0, 0</value>
+  </data>
+  <data name="addReservation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 39</value>
+  </data>
+  <data name="addReservation.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="addReservation.Text" xml:space="preserve">
+    <value>Add Reservation</value>
+  </data>
+  <data name="addReservation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addReservation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;addReservation.Name" xml:space="preserve">
+    <value>addReservation</value>
+  </data>
+  <data name="&gt;&gt;addReservation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addReservation.Parent" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;addReservation.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="modifyReservation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="modifyReservation.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="modifyReservation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="modifyReservation.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyReservation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="modifyReservation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="modifyReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 0, 0, 0</value>
+  </data>
+  <data name="modifyReservation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 35</value>
+  </data>
+  <data name="modifyReservation.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="modifyReservation.Text" xml:space="preserve">
+    <value>Modify Reservation</value>
+  </data>
+  <data name="modifyReservation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyReservation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.Name" xml:space="preserve">
+    <value>modifyReservation</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.Parent" xml:space="preserve">
+    <value>reservationSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyReservation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="removeCustomer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="removeCustomer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="removeCustomer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="removeCustomer.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="removeCustomer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="removeCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="removeCustomer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>32, 0, 0, 0</value>
+  </data>
+  <data name="removeCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="removeCustomer.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="removeCustomer.Text" xml:space="preserve">
+    <value>Remove Customer</value>
+  </data>
+  <data name="removeCustomer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="removeCustomer.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.Name" xml:space="preserve">
+    <value>removeCustomer</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;removeCustomer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addCustomer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="addCustomer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="addCustomer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="addCustomer.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addCustomer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="addCustomer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>32, 0, 0, 0</value>
+  </data>
+  <data name="addCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 39</value>
+  </data>
+  <data name="addCustomer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="addCustomer.Text" xml:space="preserve">
+    <value>Add Customer</value>
+  </data>
+  <data name="addCustomer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addCustomer.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.Name" xml:space="preserve">
+    <value>addCustomer</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;addCustomer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="modifyCustomer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="modifyCustomer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="modifyCustomer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="modifyCustomer.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyCustomer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="modifyCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="modifyCustomer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>32, 0, 0, 0</value>
+  </data>
+  <data name="modifyCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="modifyCustomer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="modifyCustomer.Text" xml:space="preserve">
+    <value>Modify Customer</value>
+  </data>
+  <data name="modifyCustomer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyCustomer.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.Name" xml:space="preserve">
+    <value>modifyCustomer</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyCustomer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="searchCustomer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="searchCustomer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="searchCustomer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="searchCustomer.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="searchCustomer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="searchCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 101</value>
+  </data>
+  <data name="searchCustomer.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>32, 0, 0, 0</value>
+  </data>
+  <data name="searchCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="searchCustomer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="searchCustomer.Text" xml:space="preserve">
+    <value>Search Customer</value>
+  </data>
+  <data name="searchCustomer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="searchCustomer.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.Name" xml:space="preserve">
+    <value>searchCustomer</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.Parent" xml:space="preserve">
+    <value>customerSubMenu</value>
+  </data>
+  <data name="&gt;&gt;searchCustomer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="removeTables.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="removeTables.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="removeTables.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="removeTables.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="removeTables.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="removeTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 39</value>
+  </data>
+  <data name="removeTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>45, 0, 0, 0</value>
+  </data>
+  <data name="removeTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="removeTables.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="removeTables.Text" xml:space="preserve">
+    <value>Remove Tables</value>
+  </data>
+  <data name="removeTables.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="removeTables.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;removeTables.Name" xml:space="preserve">
+    <value>removeTables</value>
+  </data>
+  <data name="&gt;&gt;removeTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;removeTables.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addTables.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="addTables.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="addTables.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="addTables.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addTables.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="addTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>45, 0, 0, 0</value>
+  </data>
+  <data name="addTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 39</value>
+  </data>
+  <data name="addTables.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="addTables.Text" xml:space="preserve">
+    <value>Add Tables</value>
+  </data>
+  <data name="addTables.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="addTables.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;addTables.Name" xml:space="preserve">
+    <value>addTables</value>
+  </data>
+  <data name="&gt;&gt;addTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;addTables.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="modifyTables.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="modifyTables.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="modifyTables.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="modifyTables.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyTables.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="modifyTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="modifyTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>45, 0, 0, 0</value>
+  </data>
+  <data name="modifyTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="modifyTables.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="modifyTables.Text" xml:space="preserve">
+    <value>Modify Tables</value>
+  </data>
+  <data name="modifyTables.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyTables.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.Name" xml:space="preserve">
+    <value>modifyTables</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyTables.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="searchTables.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="searchTables.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="searchTables.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="searchTables.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="searchTables.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="searchTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 101</value>
+  </data>
+  <data name="searchTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>45, 0, 0, 0</value>
+  </data>
+  <data name="searchTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="searchTables.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="searchTables.Text" xml:space="preserve">
+    <value>Search Tables</value>
+  </data>
+  <data name="searchTables.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="searchTables.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;searchTables.Name" xml:space="preserve">
+    <value>searchTables</value>
+  </data>
+  <data name="&gt;&gt;searchTables.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchTables.Parent" xml:space="preserve">
+    <value>tablesSubMenu</value>
+  </data>
+  <data name="&gt;&gt;searchTables.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 100</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1416,7 +2079,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 600</value>
+    <value>1200, 708</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1673,6 +2336,12 @@
         f////wAAjAB/////AACH8P////8AAIfw/////wAAw+D/////AADBwf////8AAMAB/////wAA4AP/////
         AADwA/////8AAPgH/////wAA/A//////AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 800</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
