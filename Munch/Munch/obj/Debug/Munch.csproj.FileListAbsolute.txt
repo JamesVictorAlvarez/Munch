@@ -38,3 +38,7 @@ D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.SearchCustomer.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ViewCustomer.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.SearchTable.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ViewTable.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.AddReservation.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ViewReservation.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.RemoveReservation.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ModifyReservation.resources

@@ -233,7 +233,14 @@ namespace Munch
 
         private void reserveButton_Click(object sender, EventArgs e)
         {
+            if (currLang == "eng")
+                title.Text = "Reservation";
+            if (currLang == "fr")
+                title.Text = "Réservation";
+            if (currLang == "es")
+                title.Text = "Reserva";
             showSubPanel(reservationSubMenu);
+            OpenForm(new ViewReservation());
         }
 
         private void customerButton_Click(object sender, EventArgs e)
@@ -328,6 +335,39 @@ namespace Munch
             if (currLang == "es")
                 title.Text = "Búsqueda Mesas";
             OpenForm(new SearchTable());
+        }
+
+        private void addReservation_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Add Reservation";
+            if (currLang == "fr")
+                title.Text = "Ajouter un Réservation";
+            if (currLang == "es")
+                title.Text = "Agregar Reserva";
+            OpenForm(new AddReservation());
+        }
+
+        private void removeReservation_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Remove Reservation";
+            if (currLang == "fr")
+                title.Text = "Supprimer un Réservation";
+            if (currLang == "es")
+                title.Text = "Eliminar Reserva";
+            OpenForm(new RemoveReservation());
+        }
+
+        private void modifyReservation_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Modify Reservation";
+            if (currLang == "fr")
+                title.Text = "Modifier un Réservation";
+            if (currLang == "es")
+                title.Text = "Modificar Reserva";
+            OpenForm(new ModifyReservation());
         }
     }
 }

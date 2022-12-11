@@ -53,7 +53,7 @@
             this.tableAdapterManager = new Munch.UserDbDataSet1TableAdapters.TableAdapterManager();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.reservationSubMenu = new System.Windows.Forms.Panel();
-            this.deleteReservation = new System.Windows.Forms.Button();
+            this.removeReservation = new System.Windows.Forms.Button();
             this.addReservation = new System.Windows.Forms.Button();
             this.modifyReservation = new System.Windows.Forms.Button();
             this.customerSubMenu = new System.Windows.Forms.Panel();
@@ -256,18 +256,19 @@
             // 
             this.reservationSubMenu.BackColor = System.Drawing.Color.LightCoral;
             this.reservationSubMenu.Controls.Add(this.modifyReservation);
-            this.reservationSubMenu.Controls.Add(this.deleteReservation);
+            this.reservationSubMenu.Controls.Add(this.removeReservation);
             this.reservationSubMenu.Controls.Add(this.addReservation);
             resources.ApplyResources(this.reservationSubMenu, "reservationSubMenu");
             this.reservationSubMenu.Name = "reservationSubMenu";
             // 
-            // deleteReservation
+            // removeReservation
             // 
-            resources.ApplyResources(this.deleteReservation, "deleteReservation");
-            this.deleteReservation.FlatAppearance.BorderSize = 0;
-            this.deleteReservation.ForeColor = System.Drawing.Color.White;
-            this.deleteReservation.Name = "deleteReservation";
-            this.deleteReservation.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.removeReservation, "removeReservation");
+            this.removeReservation.FlatAppearance.BorderSize = 0;
+            this.removeReservation.ForeColor = System.Drawing.Color.White;
+            this.removeReservation.Name = "removeReservation";
+            this.removeReservation.UseVisualStyleBackColor = true;
+            this.removeReservation.Click += new System.EventHandler(this.removeReservation_Click);
             // 
             // addReservation
             // 
@@ -276,6 +277,7 @@
             this.addReservation.ForeColor = System.Drawing.Color.White;
             this.addReservation.Name = "addReservation";
             this.addReservation.UseVisualStyleBackColor = true;
+            this.addReservation.Click += new System.EventHandler(this.addReservation_Click);
             // 
             // modifyReservation
             // 
@@ -284,6 +286,7 @@
             this.modifyReservation.ForeColor = System.Drawing.Color.White;
             this.modifyReservation.Name = "modifyReservation";
             this.modifyReservation.UseVisualStyleBackColor = true;
+            this.modifyReservation.Click += new System.EventHandler(this.modifyReservation_Click);
             // 
             // customerSubMenu
             // 
@@ -547,7 +550,7 @@
         private System.Windows.Forms.Button addCustomer;
         private System.Windows.Forms.Panel reservationSubMenu;
         private System.Windows.Forms.Button modifyReservation;
-        private System.Windows.Forms.Button deleteReservation;
+        private System.Windows.Forms.Button removeReservation;
         private System.Windows.Forms.Button addReservation;
     }
 }

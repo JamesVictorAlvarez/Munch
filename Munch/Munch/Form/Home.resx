@@ -877,7 +877,7 @@
     <value>0, 70</value>
   </data>
   <data name="modifyReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>20, 0, 0, 0</value>
+    <value>17, 0, 0, 0</value>
   </data>
   <data name="modifyReservation.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 35</value>
@@ -906,52 +906,52 @@
   <data name="&gt;&gt;modifyReservation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="deleteReservation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="removeReservation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="deleteReservation.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="removeReservation.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="deleteReservation.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="removeReservation.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 9.75pt</value>
   </data>
-  <data name="deleteReservation.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="removeReservation.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="deleteReservation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="removeReservation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="deleteReservation.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="removeReservation.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 39</value>
   </data>
-  <data name="deleteReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>20, 0, 0, 0</value>
+  <data name="removeReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>17, 0, 0, 0</value>
   </data>
-  <data name="deleteReservation.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="removeReservation.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 31</value>
   </data>
-  <data name="deleteReservation.TabIndex" type="System.Int32, mscorlib">
+  <data name="removeReservation.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="deleteReservation.Text" xml:space="preserve">
-    <value>Delete Reservation</value>
+  <data name="removeReservation.Text" xml:space="preserve">
+    <value>Remove Reservation</value>
   </data>
-  <data name="deleteReservation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="removeReservation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="deleteReservation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="removeReservation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;deleteReservation.Name" xml:space="preserve">
-    <value>deleteReservation</value>
+  <data name="&gt;&gt;removeReservation.Name" xml:space="preserve">
+    <value>removeReservation</value>
   </data>
-  <data name="&gt;&gt;deleteReservation.Type" xml:space="preserve">
+  <data name="&gt;&gt;removeReservation.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;deleteReservation.Parent" xml:space="preserve">
+  <data name="&gt;&gt;removeReservation.Parent" xml:space="preserve">
     <value>reservationSubMenu</value>
   </data>
-  <data name="&gt;&gt;deleteReservation.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;removeReservation.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="addReservation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -973,7 +973,7 @@
     <value>0, 0</value>
   </data>
   <data name="addReservation.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>20, 0, 0, 0</value>
+    <value>17, 0, 0, 0</value>
   </data>
   <data name="addReservation.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 39</value>
@@ -1523,12 +1523,6 @@
   <data name="&gt;&gt;close.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="title.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="title.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="title.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 14.25pt</value>
   </data>
@@ -1536,10 +1530,10 @@
     <value>NoControl</value>
   </data>
   <data name="title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 42</value>
+    <value>327, 44</value>
   </data>
   <data name="title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
+    <value>409, 23</value>
   </data>
   <data name="title.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

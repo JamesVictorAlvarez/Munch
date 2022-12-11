@@ -34,7 +34,7 @@ namespace Munch
                     cmd.Parameters.AddWithValue("@user", username);
                     cmd.ExecuteNonQuery();
                     connection.Close();
-                    MessageBox.Show("User has been removed to the database", "REMOVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("User has been removed from the database", "REMOVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch
                 {

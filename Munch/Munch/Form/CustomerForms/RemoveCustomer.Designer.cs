@@ -72,6 +72,7 @@
             this.custNumTextBox.Size = new System.Drawing.Size(194, 26);
             this.custNumTextBox.TabIndex = 24;
             this.custNumTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.custNumTextBox.TextChanged += new System.EventHandler(this.custNumTextBox_TextChanged);
             // 
             // custNumLabel
             // 
@@ -82,6 +83,7 @@
             this.custNumLabel.Size = new System.Drawing.Size(213, 25);
             this.custNumLabel.TabIndex = 23;
             this.custNumLabel.Text = "Customer\'s Num:";
+            this.custNumLabel.Click += new System.EventHandler(this.custNumLabel_Click);
             // 
             // customersDataGridView
             // 

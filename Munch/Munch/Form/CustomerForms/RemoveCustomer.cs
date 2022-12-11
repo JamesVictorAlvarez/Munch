@@ -78,5 +78,15 @@ namespace Munch
                 custNumTextBox.Text = row.Cells[0].Value.ToString();
             }
         }
+
+        private void custNumTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void custNumLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
