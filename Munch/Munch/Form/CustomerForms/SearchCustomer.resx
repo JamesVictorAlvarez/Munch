@@ -117,4 +117,343 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;customersDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="customersDataGridView.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>470, 290</value>
+  </data>
+  <data name="&gt;&gt;searchNumButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;searchGenderButton.Name" xml:space="preserve">
+    <value>searchGenderButton</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="customersDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchGenderButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="searchLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 48</value>
+  </data>
+  <data name="&gt;&gt;searchLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="searchGenderButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;viewAllCustomerButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 115</value>
+  </data>
+  <data name="searchNumButton.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="genderComboBox.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="&gt;&gt;searchNumButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="customersDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 290</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="viewAllCustomerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 52</value>
+  </data>
+  <data name="searchNumButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold</value>
+  </data>
+  <data name="customersDataGridView.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>470, 290</value>
+  </data>
+  <data name="searchGenderButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 218</value>
+  </data>
+  <data name="&gt;&gt;genderLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="searchLabel.Text" xml:space="preserve">
+    <value>Search (Num, Name, Phone):</value>
+  </data>
+  <data name="searchNameButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 52</value>
+  </data>
+  <data name="&gt;&gt;searchNameButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="genderLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 93</value>
+  </data>
+  <data name="searchPhoneButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 218</value>
+  </data>
+  <data name="&gt;&gt;searchGenderButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchNumButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;customersDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;searchPhoneButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="searchPhoneButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;searchNumButton.Name" xml:space="preserve">
+    <value>searchNumButton</value>
+  </data>
+  <data name="searchTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="genderLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="searchNameButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;genderLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="genderComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;searchLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="customersDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 40</value>
+  </data>
+  <data name="searchNameButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 160</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="genderLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="genderComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 24</value>
+  </data>
+  <data name="searchTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;customersDataGridView.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;genderLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="viewAllCustomerButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold</value>
+  </data>
+  <data name="searchLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="searchPhoneButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;searchLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="searchNumButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 52</value>
+  </data>
+  <data name="genderLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="genderComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 93</value>
+  </data>
+  <data name="&gt;&gt;searchPhoneButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;searchPhoneButton.Name" xml:space="preserve">
+    <value>searchPhoneButton</value>
+  </data>
+  <data name="&gt;&gt;searchGenderButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="searchNumButton.Text" xml:space="preserve">
+    <value>Search Num</value>
+  </data>
+  <data name="viewAllCustomerButton.Text" xml:space="preserve">
+    <value>View all Customers</value>
+  </data>
+  <data name="&gt;&gt;searchLabel.Name" xml:space="preserve">
+    <value>searchLabel</value>
+  </data>
+  <data name="genderComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="searchNameButton.Text" xml:space="preserve">
+    <value>Search Name</value>
+  </data>
+  <data name="searchTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>931, 372</value>
+  </data>
+  <data name="searchNameButton.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="searchNumButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 160</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="searchPhoneButton.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;customersDataGridView.Name" xml:space="preserve">
+    <value>customersDataGridView</value>
+  </data>
+  <data name="searchTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 21</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="searchGenderButton.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="searchGenderButton.Text" xml:space="preserve">
+    <value>Search Gender</value>
+  </data>
+  <data name="viewAllCustomerButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="searchPhoneButton.Text" xml:space="preserve">
+    <value>Search Phone</value>
+  </data>
+  <data name="genderComboBox.Items1" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="searchTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="searchPhoneButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 52</value>
+  </data>
+  <data name="genderComboBox.Items" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SearchCustomer</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="searchGenderButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;searchNameButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;searchNameButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="searchNumButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 600</value>
+  </data>
+  <data name="&gt;&gt;genderLabel.Name" xml:space="preserve">
+    <value>genderLabel</value>
+  </data>
+  <data name="&gt;&gt;searchPhoneButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="viewAllCustomerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="searchTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 47</value>
+  </data>
+  <data name="genderLabel.Text" xml:space="preserve">
+    <value>Customer's Gender:</value>
+  </data>
+  <data name="genderLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;searchNameButton.Name" xml:space="preserve">
+    <value>searchNameButton</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="searchGenderButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 52</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SearchCustomer</value>
+  </data>
+  <data name="viewAllCustomerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 276</value>
+  </data>
+  <data name="searchLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;genderComboBox.Name" xml:space="preserve">
+    <value>genderComboBox</value>
+  </data>
+  <data name="searchLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 21</value>
+  </data>
+  <data name="&gt;&gt;viewAllCustomerButton.Name" xml:space="preserve">
+    <value>viewAllCustomerButton</value>
+  </data>
+  <data name="&gt;&gt;viewAllCustomerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewAllCustomerButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.Name" xml:space="preserve">
+    <value>searchTextBox</value>
+  </data>
+  <data name="searchNameButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

@@ -13,11 +13,12 @@ namespace Munch
 {
     public partial class SearchTable : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public SearchTable()
         {
             InitializeComponent();
+            connection = con1.connection;
         }
 
         private void searchButton_Click(object sender, EventArgs e)

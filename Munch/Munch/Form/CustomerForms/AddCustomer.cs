@@ -13,12 +13,13 @@ namespace Munch
 {
     public partial class AddCustomer : Form
     {
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public AddCustomer()
         {
             InitializeComponent();
+            connection = con1.connection;
         }
-
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
 
         private void insertCustumers()
         {

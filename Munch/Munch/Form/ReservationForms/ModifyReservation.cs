@@ -13,12 +13,14 @@ namespace Munch
 {
     public partial class ModifyReservation : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public ModifyReservation()
         {
             InitializeComponent();
+            connection = con1.connection;
             PopulateReservation();
+            
         }
 
         private void PopulateReservation()
@@ -26,7 +28,7 @@ namespace Munch
             try
             {
                 connection.Open();
-                string query = "SELECT * FROM Reservation";
+                string query = "SELECT * FROM Reservation ORDER BY Date ASC";
                 SqlDataAdapter sda = new SqlDataAdapter(query, connection);
                 SqlCommandBuilder builder = new SqlCommandBuilder(sda);
                 var dataset = new DataSet();
@@ -41,23 +43,6 @@ namespace Munch
 
         }
 
-        private void reservationDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = reservationDataGridView.Rows[e.RowIndex];
-                // Split the input string into an array of substrings using the space
-                // and dash characters as delimiters.
-                string[] nums = row.Cells[3].Value.ToString().Split(' ', '-');
-
-                custNumTextBox.Text = row.Cells[0].Value.ToString();
-                tableIdTextBox.Text = row.Cells[1].Value.ToString();
-                custNameTextBox.Text = row.Cells[2].Value.ToString();
-                time1.Text = nums[0];
-                time2.Text = nums[3];
-                dateTextBox.Text = row.Cells[4].Value.ToString();
-            }
-        }
 
         private void modifyCustomerButton_Click(object sender, EventArgs e)
         {
@@ -88,6 +73,24 @@ namespace Munch
                     MessageBox.Show("Database error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 PopulateReservation();
+            }
+        }
+
+        private void reservationDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = reservationDataGridView.Rows[e.RowIndex];
+                // Split the input string into an array of substrings using the space
+                // and dash characters as delimiters.
+                string[] nums = row.Cells[3].Value.ToString().Split(' ', '-');
+
+                custNumTextBox.Text = row.Cells[0].Value.ToString();
+                tableIdTextBox.Text = row.Cells[1].Value.ToString();
+                custNameTextBox.Text = row.Cells[2].Value.ToString();
+                time1.Text = nums[0];
+                time2.Text = nums[3];
+                dateTextBox.Text = row.Cells[4].Value.ToString();
             }
         }
     }

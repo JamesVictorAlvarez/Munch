@@ -120,23 +120,69 @@
   <data name="settingsButton.Text" xml:space="preserve">
     <value>Ajustes</value>
   </data>
-  <data name="userButton.Text" xml:space="preserve">
-    <value>Usario</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="modifyUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
   </data>
-  <data name="tableButton.Text" xml:space="preserve">
-    <value>Mesas</value>
+  <data name="modifyUserButton.Text" xml:space="preserve">
+    <value>Modificar Usuario</value>
   </data>
-  <data name="customerButton.Text" xml:space="preserve">
-    <value>Cliente</value>
-  </data>
-  <data name="reserveButton.Text" xml:space="preserve">
-    <value>Reserva</value>
+  <data name="removeUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
   </data>
   <data name="removeUserButton.Text" xml:space="preserve">
     <value>Eliminar Usuario</value>
   </data>
+  <data name="addUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
+  </data>
   <data name="addUserButton.Text" xml:space="preserve">
     <value>Agregar Usuario</value>
+  </data>
+  <data name="userButton.Text" xml:space="preserve">
+    <value>Usario</value>
+  </data>
+  <data name="searchTables.Text" xml:space="preserve">
+    <value>Buscar Tablas</value>
+  </data>
+  <data name="modifyTables.Text" xml:space="preserve">
+    <value>Modificar Tablas</value>
+  </data>
+  <data name="removeTables.Text" xml:space="preserve">
+    <value>Eliminar Tablas</value>
+  </data>
+  <data name="addTables.Text" xml:space="preserve">
+    <value>Agregar Tablas</value>
+  </data>
+  <data name="tableButton.Text" xml:space="preserve">
+    <value>Mesas</value>
+  </data>
+  <data name="searchCustomer.Text" xml:space="preserve">
+    <value>Buscar Cliente</value>
+  </data>
+  <data name="modifyCustomer.Text" xml:space="preserve">
+    <value>Modificar Cliente</value>
+  </data>
+  <data name="removeCustomer.Text" xml:space="preserve">
+    <value>Eliminar Cliente</value>
+  </data>
+  <data name="addCustomer.Text" xml:space="preserve">
+    <value>Añadir Cliente</value>
+  </data>
+  <data name="customerButton.Text" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="modifyReservation.Text" xml:space="preserve">
+    <value>Modificar Reserva</value>
+  </data>
+  <data name="removeReservation.Text" xml:space="preserve">
+    <value>Eliminar Reserva</value>
+  </data>
+  <data name="addReservation.Text" xml:space="preserve">
+    <value>Añadir Reserva</value>
+  </data>
+  <data name="reserveButton.Text" xml:space="preserve">
+    <value>Reserva</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="close.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -360,8 +406,11 @@
         SxzTfu6YAfTRM8/7fxtUfoGstnQNAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 48</value>
+  </data>
   <data name="title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 23</value>
+    <value>996, 23</value>
   </data>
   <data name="title.Text" xml:space="preserve">
     <value>HOGAR</value>
@@ -654,5 +703,8 @@
         f////wAAjAB/////AACH8P////8AAIfw/////wAAw+D/////AADBwf////8AAMAB/////wAA4AP/////
         AADwA/////8AAPgH/////wAA/A//////AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

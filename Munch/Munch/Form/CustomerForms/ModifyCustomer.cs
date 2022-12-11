@@ -13,11 +13,12 @@ namespace Munch
 {
     public partial class ModifyCustomer : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public ModifyCustomer()
         {
             InitializeComponent();
+            connection = con1.connection;
             Populate();
         }
 
@@ -79,6 +80,11 @@ namespace Munch
         }
 
         private void customersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void customersDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)
             {

@@ -13,11 +13,12 @@ namespace Munch
 {
     public partial class AddReservation : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public AddReservation()
         {
             InitializeComponent();
+            connection = con1.connection;
             PopulateReservation();
             PopulateCustomer();
             PopulateTable();
@@ -28,7 +29,7 @@ namespace Munch
             try
             {
                 connection.Open();
-                string query = "SELECT * FROM Reservation";
+                string query = "SELECT * FROM Reservation ORDER BY Date ASC";
                 SqlDataAdapter sda = new SqlDataAdapter(query, connection);
                 SqlCommandBuilder builder = new SqlCommandBuilder(sda);
                 var dataset = new DataSet();
@@ -88,25 +89,6 @@ namespace Munch
 
         }
 
-        private void customerGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = customerGridView.Rows[e.RowIndex];
-                custNumTextBox.Text = row.Cells[0].Value.ToString();
-                custNameTextBox.Text = row.Cells[1].Value.ToString();
-            }
-        }
-
-        private void tableGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = tableGridView.Rows[e.RowIndex];
-                tableIdTextBox.Text = row.Cells[0].Value.ToString();
-            }
-        }
-
         private void addCustomerButton_Click(object sender, EventArgs e)
         {
             string num = custNumTextBox.Text.Trim(), name = custNameTextBox.Text.Trim(), id = tableIdTextBox.Text.Trim(), timeText1 = time1.Text.Trim(),
@@ -135,6 +117,25 @@ namespace Munch
                     MessageBox.Show("Database error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 PopulateReservation();
+            }
+        }
+
+        private void customerGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = customerGridView.Rows[e.RowIndex];
+                custNumTextBox.Text = row.Cells[0].Value.ToString();
+                custNameTextBox.Text = row.Cells[1].Value.ToString();
+            }
+        }
+
+        private void tableGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = tableGridView.Rows[e.RowIndex];
+                tableIdTextBox.Text = row.Cells[0].Value.ToString();
             }
         }
     }

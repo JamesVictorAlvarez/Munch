@@ -120,29 +120,98 @@
   <data name="settingsButton.Text" xml:space="preserve">
     <value>Réglages</value>
   </data>
-  <data name="userButton.Text" xml:space="preserve">
-    <value>Utilisateur</value>
-  </data>
-  <data name="customerButton.Text" xml:space="preserve">
-    <value>Client</value>
-  </data>
-  <data name="reserveButton.Text" xml:space="preserve">
-    <value>Réservation</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="modifyUserButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="modifyUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>28, 0, 0, 0</value>
+  </data>
+  <data name="modifyUserButton.Text" xml:space="preserve">
+    <value>Modifier Utilisateur</value>
+  </data>
+  <data name="removeUserButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
   <data name="removeUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>40, 0, 0, 0</value>
+    <value>28, 0, 0, 0</value>
   </data>
   <data name="removeUserButton.Text" xml:space="preserve">
     <value>Retirer l'utilisateur</value>
   </data>
+  <data name="addUserButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
   <data name="addUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>40, 0, 0, 0</value>
+    <value>28, 0, 0, 0</value>
   </data>
   <data name="addUserButton.Text" xml:space="preserve">
     <value>Ajouter l'utilisateur</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="userButton.Text" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="searchTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
+  </data>
+  <data name="searchTables.Text" xml:space="preserve">
+    <value>Chercher Tables</value>
+  </data>
+  <data name="modifyTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
+  </data>
+  <data name="modifyTables.Text" xml:space="preserve">
+    <value>Modifier Tables</value>
+  </data>
+  <data name="removeTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
+  </data>
+  <data name="removeTables.Text" xml:space="preserve">
+    <value>Supprimer Tables</value>
+  </data>
+  <data name="addTables.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>38, 0, 0, 0</value>
+  </data>
+  <data name="addTables.Text" xml:space="preserve">
+    <value>Ajout Tables</value>
+  </data>
+  <data name="searchCustomer.Text" xml:space="preserve">
+    <value>Checher Client</value>
+  </data>
+  <data name="modifyCustomer.Text" xml:space="preserve">
+    <value>Modifier Client</value>
+  </data>
+  <data name="removeCustomer.Text" xml:space="preserve">
+    <value>Supprimer Client</value>
+  </data>
+  <data name="addCustomer.Text" xml:space="preserve">
+    <value>Ajout Client</value>
+  </data>
+  <data name="customerButton.Text" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="modifyReservation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt</value>
+  </data>
+  <data name="modifyReservation.Text" xml:space="preserve">
+    <value>Modifier Réservation</value>
+  </data>
+  <data name="removeReservation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt</value>
+  </data>
+  <data name="removeReservation.Text" xml:space="preserve">
+    <value>Supprimer Réservation</value>
+  </data>
+  <data name="addReservation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 8.25pt</value>
+  </data>
+  <data name="addReservation.Text" xml:space="preserve">
+    <value>Ajout Réservation</value>
+  </data>
+  <data name="reserveButton.Text" xml:space="preserve">
+    <value>Réservation</value>
+  </data>
   <data name="close.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
@@ -365,10 +434,10 @@
 </value>
   </data>
   <data name="title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 35</value>
+    <value>0, 35</value>
   </data>
   <data name="title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 23</value>
+    <value>1002, 23</value>
   </data>
   <data name="title.Text" xml:space="preserve">
     <value>PAGE D'ACCUEIL</value>
@@ -661,5 +730,8 @@
         f////wAAjAB/////AACH8P////8AAIfw/////wAAw+D/////AADBwf////8AAMAB/////wAA4AP/////
         AADwA/////8AAPgH/////wAA/A//////AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

@@ -13,12 +13,15 @@ namespace Munch
 {
     public partial class ViewCustomer : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
+        Connection con1 = new Connection();
+        SqlConnection connection;
 
         public ViewCustomer()
         {
             InitializeComponent();
+            connection = con1.connection;
             Populate();
+            
         }
 
         private void Populate()

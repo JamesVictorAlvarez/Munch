@@ -28,90 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemoveCustomer));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customersDataGridView = new System.Windows.Forms.DataGridView();
             this.removeCustomerButton = new System.Windows.Forms.Button();
             this.custNumTextBox = new System.Windows.Forms.TextBox();
             this.custNumLabel = new System.Windows.Forms.Label();
-            this.customersDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
+            this.panel1.Controls.Add(this.customersDataGridView);
             this.panel1.Controls.Add(this.removeCustomerButton);
             this.panel1.Controls.Add(this.custNumTextBox);
             this.panel1.Controls.Add(this.custNumLabel);
-            this.panel1.Controls.Add(this.customersDataGridView);
-            this.panel1.Location = new System.Drawing.Point(163, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 455);
-            this.panel1.TabIndex = 0;
+            // 
+            // customersDataGridView
+            // 
+            resources.ApplyResources(this.customersDataGridView, "customersDataGridView");
+            this.customersDataGridView.AllowUserToAddRows = false;
+            this.customersDataGridView.AllowUserToDeleteRows = false;
+            this.customersDataGridView.AllowUserToResizeColumns = false;
+            this.customersDataGridView.AllowUserToResizeRows = false;
+            this.customersDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.customersDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.customersDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.customersDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.customersDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.customersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customersDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.customersDataGridView.EnableHeadersVisualStyles = false;
+            this.customersDataGridView.GridColor = System.Drawing.Color.Gray;
+            this.customersDataGridView.MultiSelect = false;
+            this.customersDataGridView.Name = "customersDataGridView";
+            this.customersDataGridView.ReadOnly = true;
+            this.customersDataGridView.RowHeadersVisible = false;
+            this.customersDataGridView.RowTemplate.Height = 25;
+            this.customersDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.customersDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.customersDataGridView_CellMouseClick);
             // 
             // removeCustomerButton
             // 
+            resources.ApplyResources(this.removeCustomerButton, "removeCustomerButton");
             this.removeCustomerButton.BackColor = System.Drawing.Color.White;
+            this.removeCustomerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.removeCustomerButton.FlatAppearance.BorderSize = 0;
-            this.removeCustomerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeCustomerButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
-            this.removeCustomerButton.Location = new System.Drawing.Point(213, 77);
             this.removeCustomerButton.Name = "removeCustomerButton";
-            this.removeCustomerButton.Size = new System.Drawing.Size(216, 52);
-            this.removeCustomerButton.TabIndex = 25;
-            this.removeCustomerButton.Text = "Remove Customer";
             this.removeCustomerButton.UseVisualStyleBackColor = false;
             this.removeCustomerButton.Click += new System.EventHandler(this.removeCustomerButton_Click);
             // 
             // custNumTextBox
             // 
-            this.custNumTextBox.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.custNumTextBox.Location = new System.Drawing.Point(325, 33);
-            this.custNumTextBox.Multiline = true;
+            resources.ApplyResources(this.custNumTextBox, "custNumTextBox");
             this.custNumTextBox.Name = "custNumTextBox";
-            this.custNumTextBox.Size = new System.Drawing.Size(194, 26);
-            this.custNumTextBox.TabIndex = 24;
-            this.custNumTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.custNumTextBox.TextChanged += new System.EventHandler(this.custNumTextBox_TextChanged);
             // 
             // custNumLabel
             // 
-            this.custNumLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.custNumLabel, "custNumLabel");
             this.custNumLabel.ForeColor = System.Drawing.Color.White;
-            this.custNumLabel.Location = new System.Drawing.Point(95, 36);
             this.custNumLabel.Name = "custNumLabel";
-            this.custNumLabel.Size = new System.Drawing.Size(213, 25);
-            this.custNumLabel.TabIndex = 23;
-            this.custNumLabel.Text = "Customer\'s Num:";
             this.custNumLabel.Click += new System.EventHandler(this.custNumLabel_Click);
-            // 
-            // customersDataGridView
-            // 
-            this.customersDataGridView.AllowUserToAddRows = false;
-            this.customersDataGridView.AllowUserToDeleteRows = false;
-            this.customersDataGridView.BackgroundColor = System.Drawing.Color.IndianRed;
-            this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customersDataGridView.GridColor = System.Drawing.Color.IndianRed;
-            this.customersDataGridView.Location = new System.Drawing.Point(108, 135);
-            this.customersDataGridView.MaximumSize = new System.Drawing.Size(443, 292);
-            this.customersDataGridView.MinimumSize = new System.Drawing.Size(443, 292);
-            this.customersDataGridView.Name = "customersDataGridView";
-            this.customersDataGridView.ReadOnly = true;
-            this.customersDataGridView.Size = new System.Drawing.Size(443, 292);
-            this.customersDataGridView.TabIndex = 22;
-            this.customersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersDataGridView_CellContentClick);
-            this.customersDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.customersDataGridView_CellMouseClick);
             // 
             // RemoveCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(905, 495);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RemoveCustomer";
-            this.Text = "RemoveCustomer";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).EndInit();

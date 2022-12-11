@@ -13,11 +13,12 @@ namespace Munch
 {
     public partial class RemoveCustomer : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public RemoveCustomer()
         {
             InitializeComponent();
+            connection = con1.connection;
             Populate();
         }
 
@@ -70,15 +71,6 @@ namespace Munch
             connection.Close();
         }
 
-        private void customersDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = customersDataGridView.Rows[e.RowIndex];
-                custNumTextBox.Text = row.Cells[0].Value.ToString();
-            }
-        }
-
         private void custNumTextBox_TextChanged(object sender, EventArgs e)
         {
 
@@ -87,6 +79,15 @@ namespace Munch
         private void custNumLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void customersDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = customersDataGridView.Rows[e.RowIndex];
+                custNumTextBox.Text = row.Cells[0].Value.ToString();
+            }
         }
     }
 }

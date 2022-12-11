@@ -14,11 +14,12 @@ namespace Munch
 {
     public partial class Login : Form
     {
-
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public Login()
         {
             InitializeComponent();
+            connection = con1.connection;
         }
 
         private void Login_Load(object sender, EventArgs e)

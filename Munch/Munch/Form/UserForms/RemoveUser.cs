@@ -13,10 +13,13 @@ namespace Munch
 {
     public partial class RemoveUser : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public RemoveUser()
         {
             InitializeComponent();
+            connection = con1.connection;
+            PopulateUser();
         }
 
         private void removeButton_Click(object sender, EventArgs e)
@@ -40,6 +43,35 @@ namespace Munch
                 {
                     MessageBox.Show("Database error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            PopulateUser();
+        }
+
+        private void PopulateUser()
+        {
+            try
+            {
+                connection.Open();
+                string query = "SELECT username FROM Login";
+                SqlDataAdapter sda = new SqlDataAdapter(query, connection);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+                var dataset = new DataSet();
+                sda.Fill(dataset);
+                userDataGridView.DataSource = dataset.Tables[0];
+                connection.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Database error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void userDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = userDataGridView.Rows[e.RowIndex];
+                userText.Text = row.Cells[0].Value.ToString();
             }
         }
     }

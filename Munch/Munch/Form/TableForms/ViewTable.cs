@@ -13,11 +13,12 @@ namespace Munch
 {
     public partial class ViewTable : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public ViewTable()
         {
             InitializeComponent();
+            connection = con1.connection;
         }
 
         private void DisplayTablesButton_Click(object sender, EventArgs e)
@@ -30,5 +31,6 @@ namespace Munch
             tableDataGridView.DataSource = dtbl;
             connection.Close();
         }
+
     }
 }

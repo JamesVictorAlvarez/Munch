@@ -128,8 +128,6 @@ namespace Munch
             languageBox.Visible = true;
             settingsPanel.Visible = true;
             langLabel.Visible = true;
-            darkLabel.Visible = true;
-            audioLabel.Visible = true;
             logoutButton.Visible = true;
             homePicture.Visible = false;
         }
@@ -194,8 +192,6 @@ namespace Munch
             languageBox.Visible = false;
             settingsPanel.Visible = false;
             langLabel.Visible = false;
-            darkLabel.Visible = false;
-            audioLabel.Visible = false;
             logoutButton.Visible = false;
         }
 
@@ -369,5 +365,17 @@ namespace Munch
                 title.Text = "Modificar Reserva";
             OpenForm(new ModifyReservation());
         }
+
+        private void modifyUserButton_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Modify User";
+            if (currLang == "fr")
+                title.Text = "Modifier un Utilisateur";
+            if (currLang == "es")
+                title.Text = "Modificar Usuario";
+            OpenForm(new ModifyUser());
+        }
+
     }
 }

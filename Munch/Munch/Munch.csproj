@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection.cs" />
     <Compile Include="Form\ReservationForms\AddReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,14 +116,14 @@
     <Compile Include="Form\ReservationForms\ModifyReservation.Designer.cs">
       <DependentUpon>ModifyReservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Form\Table.cs">
+    <Compile Include="Form\UserForms\ModifyUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Table.Designer.cs">
-      <DependentUpon>Table.cs</DependentUpon>
+    <Compile Include="Form\UserForms\ModifyUser.Designer.cs">
+      <DependentUpon>ModifyUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Form\UserForms\RemoveUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +183,36 @@
     <Compile Include="Form\ReservationForms\ViewReservation.Designer.cs">
       <DependentUpon>ViewReservation.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\CustomerForms\AddCustomer.es.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\AddCustomer.fr-CA.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\ModifyCustomer.es.resx">
+      <DependentUpon>ModifyCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\ModifyCustomer.fr-CA.resx">
+      <DependentUpon>ModifyCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\RemoveCustomer.es.resx">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\RemoveCustomer.fr-CA.resx">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\SearchCustomer.es.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CustomerForms\SearchCustomer.fr-CA.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\AddReservation.es.resx">
+      <DependentUpon>AddReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\AddReservation.fr-CA.resx">
+      <DependentUpon>AddReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\ReservationForms\AddReservation.resx">
       <DependentUpon>AddReservation.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,20 +246,65 @@
     <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Table.resx">
-      <DependentUpon>Table.cs</DependentUpon>
+    <EmbeddedResource Include="Form\ReservationForms\ModifyReservation.es.resx">
+      <DependentUpon>ModifyReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\ModifyReservation.fr-CA.resx">
+      <DependentUpon>ModifyReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\RemoveReservation.es.resx">
+      <DependentUpon>RemoveReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\RemoveReservation.fr-CA.resx">
+      <DependentUpon>RemoveReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\ViewReservation.es.resx">
+      <DependentUpon>ViewReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReservationForms\ViewReservation.fr-CA.resx">
+      <DependentUpon>ViewReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\AddTable.es.resx">
+      <DependentUpon>AddTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\AddTable.fr-CA.resx">
+      <DependentUpon>AddTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\AddTable.resx">
       <DependentUpon>AddTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\ModifyTable.es.resx">
+      <DependentUpon>ModifyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\ModifyTable.fr-CA.resx">
+      <DependentUpon>ModifyTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\ModifyTable.resx">
       <DependentUpon>ModifyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\RemoveTable.es.resx">
+      <DependentUpon>RemoveTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\RemoveTable.fr-CA.resx">
+      <DependentUpon>RemoveTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\RemoveTable.resx">
       <DependentUpon>RemoveTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\SearchTable.es.resx">
+      <DependentUpon>SearchTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\SearchTable.fr-CA.resx">
+      <DependentUpon>SearchTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\SearchTable.resx">
       <DependentUpon>SearchTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\ViewTable.es.resx">
+      <DependentUpon>ViewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\ViewTable.fr-CA.resx">
+      <DependentUpon>ViewTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\ViewTable.resx">
       <DependentUpon>ViewTable.cs</DependentUpon>
@@ -242,6 +318,12 @@
     <EmbeddedResource Include="Form\UserForms\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\ModifyUser.es.resx">
+      <DependentUpon>ModifyUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\ModifyUser.fr-CA.resx">
+      <DependentUpon>ModifyUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\UserForms\RemoveUser.es.resx">
       <DependentUpon>RemoveUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\ReservationForms\ModifyReservation.resx">
       <DependentUpon>ModifyReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UserForms\ModifyUser.resx">
+      <DependentUpon>ModifyUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

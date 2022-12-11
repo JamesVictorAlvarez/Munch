@@ -14,14 +14,17 @@ namespace Munch
 {
     public partial class RemoveReservation : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
+        Connection con1 = new Connection();
+        SqlConnection connection;
         int custNum;
         int tableId;
         
         public RemoveReservation()
         {
             InitializeComponent();
+            connection = con1.connection;
             PopulateReservation();
+            
         }
 
         private void PopulateReservation()
@@ -29,7 +32,7 @@ namespace Munch
             try
             {
                 connection.Open();
-                string query = "SELECT * FROM Reservation";
+                string query = "SELECT * FROM Reservation ORDER BY Date ASC";
                 SqlDataAdapter sda = new SqlDataAdapter(query, connection);
                 SqlCommandBuilder builder = new SqlCommandBuilder(sda);
                 var dataset = new DataSet();

@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifyReservation));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.reservationDataGridView = new System.Windows.Forms.DataGridView();
             this.dateTextBox = new System.Windows.Forms.TextBox();
@@ -49,7 +52,9 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
+            this.panel1.Controls.Add(this.reservationDataGridView);
             this.panel1.Controls.Add(this.dateTextBox);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.tableIdTextBox);
@@ -63,178 +68,132 @@
             this.panel1.Controls.Add(this.modifyCustomerButton);
             this.panel1.Controls.Add(this.custNumTextBox);
             this.panel1.Controls.Add(this.custNumLabel);
-            this.panel1.Controls.Add(this.reservationDataGridView);
-            this.panel1.Location = new System.Drawing.Point(100, 92);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(817, 392);
-            this.panel1.TabIndex = 0;
             // 
             // reservationDataGridView
             // 
+            resources.ApplyResources(this.reservationDataGridView, "reservationDataGridView");
             this.reservationDataGridView.AllowUserToAddRows = false;
             this.reservationDataGridView.AllowUserToDeleteRows = false;
-            this.reservationDataGridView.BackgroundColor = System.Drawing.Color.IndianRed;
+            this.reservationDataGridView.AllowUserToResizeColumns = false;
+            this.reservationDataGridView.AllowUserToResizeRows = false;
+            this.reservationDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.reservationDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.reservationDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reservationDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.reservationDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(1);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.reservationDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.reservationDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reservationDataGridView.GridColor = System.Drawing.Color.IndianRed;
-            this.reservationDataGridView.Location = new System.Drawing.Point(262, 65);
-            this.reservationDataGridView.MaximumSize = new System.Drawing.Size(530, 252);
-            this.reservationDataGridView.MinimumSize = new System.Drawing.Size(530, 252);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.reservationDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            this.reservationDataGridView.EnableHeadersVisualStyles = false;
+            this.reservationDataGridView.GridColor = System.Drawing.Color.Gray;
+            this.reservationDataGridView.MultiSelect = false;
             this.reservationDataGridView.Name = "reservationDataGridView";
             this.reservationDataGridView.ReadOnly = true;
-            this.reservationDataGridView.Size = new System.Drawing.Size(530, 252);
-            this.reservationDataGridView.TabIndex = 25;
+            this.reservationDataGridView.RowHeadersVisible = false;
+            this.reservationDataGridView.RowTemplate.Height = 25;
+            this.reservationDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.reservationDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.reservationDataGridView_CellMouseClick);
             // 
             // dateTextBox
             // 
-            this.dateTextBox.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.dateTextBox.Location = new System.Drawing.Point(37, 291);
-            this.dateTextBox.Multiline = true;
+            resources.ApplyResources(this.dateTextBox, "dateTextBox");
             this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(194, 26);
-            this.dateTextBox.TabIndex = 55;
-            this.dateTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(39, 271);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 17);
-            this.label5.TabIndex = 54;
-            this.label5.Text = "Date (yyyy-mm-dd)";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableIdTextBox
             // 
-            this.tableIdTextBox.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.tableIdTextBox.Location = new System.Drawing.Point(39, 183);
-            this.tableIdTextBox.Multiline = true;
+            resources.ApplyResources(this.tableIdTextBox, "tableIdTextBox");
             this.tableIdTextBox.Name = "tableIdTextBox";
-            this.tableIdTextBox.Size = new System.Drawing.Size(194, 26);
-            this.tableIdTextBox.TabIndex = 53;
-            this.tableIdTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 163);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 17);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Table Id";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(127, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(22, 17);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "-";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // time2
             // 
-            this.time2.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.time2.Location = new System.Drawing.Point(168, 241);
-            this.time2.Multiline = true;
+            resources.ApplyResources(this.time2, "time2");
             this.time2.Name = "time2";
-            this.time2.Size = new System.Drawing.Size(43, 26);
-            this.time2.TabIndex = 50;
-            this.time2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // time1
             // 
-            this.time1.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.time1.Location = new System.Drawing.Point(59, 240);
-            this.time1.Multiline = true;
+            resources.ApplyResources(this.time1, "time1");
             this.time1.Name = "time1";
-            this.time1.Size = new System.Drawing.Size(43, 26);
-            this.time1.TabIndex = 49;
-            this.time1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(37, 217);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 20);
-            this.label3.TabIndex = 48;
-            this.label3.Text = "Time";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // custNameTextBox
             // 
-            this.custNameTextBox.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.custNameTextBox.Location = new System.Drawing.Point(37, 129);
-            this.custNameTextBox.Multiline = true;
+            resources.ApplyResources(this.custNameTextBox, "custNameTextBox");
             this.custNameTextBox.Name = "custNameTextBox";
-            this.custNameTextBox.Size = new System.Drawing.Size(194, 26);
-            this.custNameTextBox.TabIndex = 47;
-            this.custNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 17);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "Customer\'s Name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // modifyCustomerButton
             // 
+            resources.ApplyResources(this.modifyCustomerButton, "modifyCustomerButton");
             this.modifyCustomerButton.BackColor = System.Drawing.Color.White;
+            this.modifyCustomerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.modifyCustomerButton.FlatAppearance.BorderSize = 0;
-            this.modifyCustomerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modifyCustomerButton.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyCustomerButton.Location = new System.Drawing.Point(85, 323);
             this.modifyCustomerButton.Name = "modifyCustomerButton";
-            this.modifyCustomerButton.Size = new System.Drawing.Size(107, 38);
-            this.modifyCustomerButton.TabIndex = 45;
-            this.modifyCustomerButton.Text = "Modify Reservation";
             this.modifyCustomerButton.UseVisualStyleBackColor = false;
             this.modifyCustomerButton.Click += new System.EventHandler(this.modifyCustomerButton_Click);
             // 
             // custNumTextBox
             // 
-            this.custNumTextBox.Font = new System.Drawing.Font("Verdana", 9.75F);
-            this.custNumTextBox.Location = new System.Drawing.Point(37, 76);
-            this.custNumTextBox.Multiline = true;
+            resources.ApplyResources(this.custNumTextBox, "custNumTextBox");
             this.custNumTextBox.Name = "custNumTextBox";
-            this.custNumTextBox.Size = new System.Drawing.Size(194, 26);
-            this.custNumTextBox.TabIndex = 44;
-            this.custNumTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // custNumLabel
             // 
-            this.custNumLabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.custNumLabel, "custNumLabel");
             this.custNumLabel.ForeColor = System.Drawing.Color.White;
-            this.custNumLabel.Location = new System.Drawing.Point(36, 56);
             this.custNumLabel.Name = "custNumLabel";
-            this.custNumLabel.Size = new System.Drawing.Size(195, 17);
-            this.custNumLabel.TabIndex = 43;
-            this.custNumLabel.Text = "Customer\'s Num";
-            this.custNumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ModifyReservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(949, 516);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModifyReservation";
-            this.Text = "ModifyReservation";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationDataGridView)).EndInit();
@@ -245,7 +204,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView reservationDataGridView;
         public System.Windows.Forms.TextBox dateTextBox;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox tableIdTextBox;
@@ -259,5 +217,6 @@
         private System.Windows.Forms.Button modifyCustomerButton;
         public System.Windows.Forms.TextBox custNumTextBox;
         private System.Windows.Forms.Label custNumLabel;
+        private System.Windows.Forms.DataGridView reservationDataGridView;
     }
 }

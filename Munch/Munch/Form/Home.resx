@@ -142,7 +142,7 @@
     <value>NoControl</value>
   </data>
   <data name="settingsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 851</value>
+    <value>0, 872</value>
   </data>
   <data name="settingsButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
@@ -169,6 +169,54 @@
     <value>menu</value>
   </data>
   <data name="&gt;&gt;settingsButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="modifyUserButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="modifyUserButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="modifyUserButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9.75pt</value>
+  </data>
+  <data name="modifyUserButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyUserButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="modifyUserButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="modifyUserButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>45, 0, 0, 0</value>
+  </data>
+  <data name="modifyUserButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 31</value>
+  </data>
+  <data name="modifyUserButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="modifyUserButton.Text" xml:space="preserve">
+    <value>Modify User</value>
+  </data>
+  <data name="modifyUserButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="modifyUserButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;modifyUserButton.Name" xml:space="preserve">
+    <value>modifyUserButton</value>
+  </data>
+  <data name="&gt;&gt;modifyUserButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;modifyUserButton.Parent" xml:space="preserve">
+    <value>userSubMenu</value>
+  </data>
+  <data name="&gt;&gt;modifyUserButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="removeUserButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -217,7 +265,7 @@
     <value>userSubMenu</value>
   </data>
   <data name="&gt;&gt;removeUserButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="addUserButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -265,16 +313,16 @@
     <value>userSubMenu</value>
   </data>
   <data name="&gt;&gt;addUserButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="userSubMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="userSubMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 781</value>
+    <value>0, 768</value>
   </data>
   <data name="userSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 70</value>
+    <value>165, 104</value>
   </data>
   <data name="userSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -307,7 +355,7 @@
     <value>NoControl</value>
   </data>
   <data name="userButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 705</value>
+    <value>0, 692</value>
   </data>
   <data name="userButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
@@ -532,10 +580,10 @@
     <value>Top</value>
   </data>
   <data name="tablesSubMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 570</value>
+    <value>0, 562</value>
   </data>
   <data name="tablesSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 135</value>
+    <value>165, 130</value>
   </data>
   <data name="tablesSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -568,7 +616,7 @@
     <value>NoControl</value>
   </data>
   <data name="tableButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 494</value>
+    <value>0, 486</value>
   </data>
   <data name="tableButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
@@ -793,10 +841,10 @@
     <value>Top</value>
   </data>
   <data name="customerSubMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 358</value>
+    <value>0, 354</value>
   </data>
   <data name="customerSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 136</value>
+    <value>165, 132</value>
   </data>
   <data name="customerSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -829,7 +877,7 @@
     <value>NoControl</value>
   </data>
   <data name="customerButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 282</value>
+    <value>0, 278</value>
   </data>
   <data name="customerButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 0, 0, 0</value>
@@ -1009,7 +1057,7 @@
     <value>0, 176</value>
   </data>
   <data name="reservationSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 106</value>
+    <value>165, 102</value>
   </data>
   <data name="reservationSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1249,7 +1297,7 @@
     <value>NoControl</value>
   </data>
   <data name="min.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 3</value>
+    <value>937, 3</value>
   </data>
   <data name="min.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 28</value>
@@ -1500,7 +1548,7 @@
     <value>NoControl</value>
   </data>
   <data name="close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>985, 3</value>
+    <value>969, 3</value>
   </data>
   <data name="close.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 28</value>
@@ -1530,10 +1578,10 @@
     <value>NoControl</value>
   </data>
   <data name="title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 44</value>
+    <value>0, 44</value>
   </data>
   <data name="title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 23</value>
+    <value>999, 23</value>
   </data>
   <data name="title.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1563,7 +1611,7 @@
     <value>182, 0</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 100</value>
+    <value>1002, 100</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1584,7 +1632,7 @@
     <value>NoControl</value>
   </data>
   <data name="homePicture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 47</value>
+    <value>339, 73</value>
   </data>
   <data name="homePicture.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 398</value>
@@ -1617,7 +1665,7 @@
     <value>NoControl</value>
   </data>
   <data name="logoutButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 244</value>
+    <value>207, 141</value>
   </data>
   <data name="logoutButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 33</value>
@@ -1639,72 +1687,6 @@
   </data>
   <data name="&gt;&gt;logoutButton.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="audioLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="audioLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 12pt</value>
-  </data>
-  <data name="audioLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="audioLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 165</value>
-  </data>
-  <data name="audioLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 18</value>
-  </data>
-  <data name="audioLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="audioLabel.Text" xml:space="preserve">
-    <value>Audio</value>
-  </data>
-  <data name="&gt;&gt;audioLabel.Name" xml:space="preserve">
-    <value>audioLabel</value>
-  </data>
-  <data name="&gt;&gt;audioLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;audioLabel.Parent" xml:space="preserve">
-    <value>settingsPanel</value>
-  </data>
-  <data name="&gt;&gt;audioLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="darkLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="darkLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 12pt</value>
-  </data>
-  <data name="darkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="darkLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 110</value>
-  </data>
-  <data name="darkLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 18</value>
-  </data>
-  <data name="darkLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="darkLabel.Text" xml:space="preserve">
-    <value>Dark Mode</value>
-  </data>
-  <data name="&gt;&gt;darkLabel.Name" xml:space="preserve">
-    <value>darkLabel</value>
-  </data>
-  <data name="&gt;&gt;darkLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;darkLabel.Parent" xml:space="preserve">
-    <value>settingsPanel</value>
-  </data>
-  <data name="&gt;&gt;darkLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="languageBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 8.25pt</value>
@@ -1740,7 +1722,7 @@
     <value>settingsPanel</value>
   </data>
   <data name="&gt;&gt;languageBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="langLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1773,13 +1755,13 @@
     <value>settingsPanel</value>
   </data>
   <data name="&gt;&gt;langLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="settingsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 76</value>
+    <value>283, 191</value>
   </data>
   <data name="settingsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 348</value>
+    <value>469, 214</value>
   </data>
   <data name="settingsPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1803,7 +1785,7 @@
     <value>182, 100</value>
   </data>
   <data name="panelPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 608</value>
+    <value>1002, 608</value>
   </data>
   <data name="panelPage.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1845,7 +1827,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1200, 708</value>
+    <value>1184, 708</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

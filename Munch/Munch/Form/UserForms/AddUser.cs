@@ -14,10 +14,13 @@ namespace Munch
 {
     public partial class AddUser : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public AddUser()
         {
             InitializeComponent();
+            connection = con1.connection;
+            PopulateUser();
         }
 
         private void hidePicture_Click(object sender, EventArgs e)
@@ -57,13 +60,26 @@ namespace Munch
                     MessageBox.Show("Database error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            PopulateUser();
         }
 
-        private void AddUser_Load(object sender, EventArgs e)
+        private void PopulateUser()
         {
-            // TODO: This line of code loads data into the 'userDbDataSet1.Login' table. You can move, or remove it, as needed.
-            this.loginTableAdapter.Fill(this.userDbDataSet1.Login);
-
+            try
+            {
+                connection.Open();
+                string query = "SELECT username FROM Login";
+                SqlDataAdapter sda = new SqlDataAdapter(query, connection);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+                var dataset = new DataSet();
+                sda.Fill(dataset);
+                userDataGridView.DataSource = dataset.Tables[0];
+                connection.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Database error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
     }

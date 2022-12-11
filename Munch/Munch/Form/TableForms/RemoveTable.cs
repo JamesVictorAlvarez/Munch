@@ -13,11 +13,12 @@ namespace Munch
 {
     public partial class RemoveTable : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\School\App Dev\Project\Munch\Munch\Form\UserDb.mdf"";Integrated Security=True");
-
+        Connection con1 = new Connection();
+        SqlConnection connection;
         public RemoveTable()
         {
             InitializeComponent();
+            connection = con1.connection;
         }
 
         private void removeTableButton_Click(object sender, EventArgs e)
@@ -46,6 +47,11 @@ namespace Munch
                 MessageBox.Show(ex.Message);
             }
             connection.Close();
+        }
+
+        private void tableIdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

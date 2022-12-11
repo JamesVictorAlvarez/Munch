@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUser));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.showPicture = new System.Windows.Forms.PictureBox();
             this.hidePicture = new System.Windows.Forms.PictureBox();
@@ -45,11 +47,16 @@
             this.tableAdapterManager = new Munch.UserDbDataSet1TableAdapters.TableAdapterManager();
             this.loginTableAdapter1 = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
             this.loginTableAdapter2 = new Munch.UserDbDataSet1TableAdapters.LoginTableAdapter();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.userDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,6 +94,7 @@
             // addButton
             // 
             this.addButton.BackColor = System.Drawing.Color.White;
+            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addButton.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.addButton, "addButton");
             this.addButton.ForeColor = System.Drawing.Color.Black;
@@ -154,21 +162,76 @@
             // 
             this.loginTableAdapter2.ClearBeforeFill = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.IndianRed;
+            this.panel2.Controls.Add(this.userDataGridView);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // userDataGridView
+            // 
+            this.userDataGridView.AllowUserToAddRows = false;
+            this.userDataGridView.AllowUserToDeleteRows = false;
+            this.userDataGridView.AllowUserToResizeColumns = false;
+            this.userDataGridView.AllowUserToResizeRows = false;
+            this.userDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.userDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.userDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.userDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.userDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.userDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.userDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.userDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.userDataGridView.EnableHeadersVisualStyles = false;
+            this.userDataGridView.GridColor = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.userDataGridView, "userDataGridView");
+            this.userDataGridView.MultiSelect = false;
+            this.userDataGridView.Name = "userDataGridView";
+            this.userDataGridView.ReadOnly = true;
+            this.userDataGridView.RowHeadersVisible = false;
+            this.userDataGridView.RowTemplate.Height = 25;
+            this.userDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
             // AddUser
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddUser";
-            this.Load += new System.EventHandler(this.AddUser_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hidePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDbDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,5 +253,8 @@
         private UserDbDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private UserDbDataSet1TableAdapters.LoginTableAdapter loginTableAdapter1;
         private UserDbDataSet1TableAdapters.LoginTableAdapter loginTableAdapter2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView userDataGridView;
     }
 }
