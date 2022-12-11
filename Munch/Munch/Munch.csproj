@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\TableForms\AddTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TableForms\AddTable.Designer.cs">
+      <DependentUpon>AddTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\CustomerForms\AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +78,6 @@
     </Compile>
     <Compile Include="Form\UserForms\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\TableForms\AddTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\TableForms\AddTable.Designer.cs">
-      <DependentUpon>AddTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\Login.cs">
       <SubType>Form</SubType>
@@ -91,17 +91,17 @@
     <Compile Include="Form\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\TableForms\ModifyTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\TableForms\ModifyTable.Designer.cs">
-      <DependentUpon>ModifyTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\CustomerForms\ModifyCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\CustomerForms\ModifyCustomer.Designer.cs">
       <DependentUpon>ModifyCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TableForms\ModifyTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TableForms\ModifyTable.Designer.cs">
+      <DependentUpon>ModifyTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,12 +110,6 @@
     </Compile>
     <Compile Include="Form\Table.Designer.cs">
       <DependentUpon>Table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\TableForms\RemoveTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\TableForms\RemoveTable.Designer.cs">
-      <DependentUpon>RemoveTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\UserForms\RemoveUser.cs">
       <SubType>Form</SubType>
@@ -135,6 +129,18 @@
     <Compile Include="Form\CustomerForms\SearchCustomer.Designer.cs">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\TableForms\RemoveTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TableForms\RemoveTable.Designer.cs">
+      <DependentUpon>RemoveTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TableForms\SearchTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TableForms\SearchTable.Designer.cs">
+      <DependentUpon>SearchTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserDbDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -145,6 +151,12 @@
     </Compile>
     <Compile Include="Form\CustomerForms\ViewCustomer.Designer.cs">
       <DependentUpon>ViewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TableForms\ViewTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TableForms\ViewTable.Designer.cs">
+      <DependentUpon>ViewTable.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form\CustomerForms\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
@@ -187,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\TableForms\RemoveTable.resx">
       <DependentUpon>RemoveTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\SearchTable.resx">
+      <DependentUpon>SearchTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TableForms\ViewTable.resx">
+      <DependentUpon>ViewTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\UserForms\AddUser.es.resx">
       <DependentUpon>AddUser.cs</DependentUpon>

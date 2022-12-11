@@ -348,6 +348,7 @@
             this.removeTables.ForeColor = System.Drawing.Color.White;
             this.removeTables.Name = "removeTables";
             this.removeTables.UseVisualStyleBackColor = true;
+            this.removeTables.Click += new System.EventHandler(this.removeTables_Click);
             // 
             // addTables
             // 
@@ -356,6 +357,7 @@
             this.addTables.ForeColor = System.Drawing.Color.White;
             this.addTables.Name = "addTables";
             this.addTables.UseVisualStyleBackColor = true;
+            this.addTables.Click += new System.EventHandler(this.addTables_Click);
             // 
             // modifyTables
             // 
@@ -364,6 +366,7 @@
             this.modifyTables.ForeColor = System.Drawing.Color.White;
             this.modifyTables.Name = "modifyTables";
             this.modifyTables.UseVisualStyleBackColor = true;
+            this.modifyTables.Click += new System.EventHandler(this.modifyTables_Click);
             // 
             // searchTables
             // 
@@ -372,6 +375,7 @@
             this.searchTables.ForeColor = System.Drawing.Color.White;
             this.searchTables.Name = "searchTables";
             this.searchTables.UseVisualStyleBackColor = true;
+            this.searchTables.Click += new System.EventHandler(this.searchTables_Click);
             // 
             // homePicture
             // 

@@ -102,6 +102,7 @@ namespace Munch
             if (currLang == "es")
                 title.Text = "Mesas";
             showSubPanel(tablesSubMenu);
+            OpenForm(new ViewTable());
         }
 
         private void loginBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -283,6 +284,50 @@ namespace Munch
             if (currLang == "es")
                 title.Text = "Búsqueda Cliente";
             OpenForm(new SearchCustomer());
+        }
+
+        private void addTables_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Add Table";
+            if (currLang == "fr")
+                title.Text = "Ajouter un Table";
+            if (currLang == "es")
+                title.Text = "Agregar Mesas";
+            OpenForm(new AddTable());
+        }
+
+        private void removeTables_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Remove Table";
+            if (currLang == "fr")
+                title.Text = "Supprimer un Table";
+            if (currLang == "es")
+                title.Text = "Eliminar Mesas";
+            OpenForm(new RemoveTable());
+        }
+
+        private void modifyTables_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Modify Table";
+            if (currLang == "fr")
+                title.Text = "Modifier un Table";
+            if (currLang == "es")
+                title.Text = "Modificar Mesas";
+            OpenForm(new ModifyTable());
+        }
+
+        private void searchTables_Click(object sender, EventArgs e)
+        {
+            if (currLang == "eng")
+                title.Text = "Search Table";
+            if (currLang == "fr")
+                title.Text = "Chercher un Table";
+            if (currLang == "es")
+                title.Text = "Búsqueda Mesas";
+            OpenForm(new SearchTable());
         }
     }
 }

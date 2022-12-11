@@ -49,7 +49,7 @@
             this.panel1.Controls.Add(this.phoneNumLabel);
             this.panel1.Controls.Add(this.nameLabel);
             this.panel1.Controls.Add(this.addCustomerButton);
-            this.panel1.Location = new System.Drawing.Point(200, 77);
+            this.panel1.Location = new System.Drawing.Point(231, 91);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(475, 328);
             this.panel1.TabIndex = 0;

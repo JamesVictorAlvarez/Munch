@@ -36,3 +36,5 @@ D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ModifyCustomer.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.RemoveCustomer.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.SearchCustomer.resources
 D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ViewCustomer.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.SearchTable.resources
+D:\School\App Dev\Project\Munch\Munch\obj\Debug\Munch.ViewTable.resources
